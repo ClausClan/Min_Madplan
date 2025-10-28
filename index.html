@@ -657,39 +657,48 @@
                 }
             }
 
+            /**
+             * RETTET FUNKTION: Sletter kun den gemte madplan og nulstiller visningen.
+             * Beholder alle indtastninger på setup-siden.
+             */
             function sletGemtMadplan() {
-                if (confirm("Er du sikker på, du vil slette den gemte madplan og starte forfra?")) {
+                // Opdateret bekræftelsestekst
+                if (confirm("Er du sikker på, du vil slette den gemte madplan? \nDine indtastninger på setup-siden (husstand, tilbud, osv.) bliver bevaret.")) {
+                    
+                    // 1. Slet fra hukommelsen
                     localStorage.removeItem('minMadplanData');
                     globalMadplanData = null;
                     nuværendeUgeIndex = 0;
                     console.log("Madplan slettet fra localStorage.");
 
+                    // 2. Nulstil UI (visningerne), så de er tomme
                     ugeOversigtContainer.innerHTML = '';
                     indkøbslisteContainer.innerHTML = '';
                     ugeTitel.textContent = 'Madplan';
                     indkøbslisteTitel.textContent = 'Indkøbsliste';
+                    opskriftTitel.textContent = 'Opskrift';
+                    opskriftIngredienser.innerHTML = '';
+                    opskriftFremgangsmåde.innerHTML = '';
 
+                    // 3. Ryd KUN output/input-felterne for prompt/json
                     document.getElementById('prompt-output-container').style.display = 'none';
-                    
-                    // Nulstil alle inputfelter
-                    document.getElementById('input-tilbud').value = '';
-                    document.getElementById('input-lager').value = '';
-                    document.getElementById('input-basis').value = '';
                     document.getElementById('prompt-output').value = '';
                     document.getElementById('json-input').value = '';
                     
-                    document.getElementById('input-voksne-antal').value = '2';
-                    document.getElementById('input-voksne-alder').value = '';
-                    document.getElementById('input-børn-antal').value = '0';
-                    document.getElementById('input-børn-alder').value = '';
+                    // Fjerner IKKE længere værdier fra:
+                    // - input-tilbud
+                    // - input-lager
+                    // - input-basis
+                    // - input-voksne-antal
+                    // - input-voksne-alder
+                    // - input-børn-antal
+                    // - input-børn-alder
+                    // - input-varighed
+                    // - input-pris
 
-                    // ===== NY NULSTILLING START =====
-                    document.getElementById('input-varighed').value = '8'; // Sæt til default
-                    document.getElementById('input-pris').value = '';
-                    // ===== NY NULSTILLING SLUT =====
-
+                    // 4. Gå til setup-skærmen
                     skiftSkærm('setup');
-                    alert("Gemt madplan er slettet. Du kan nu starte forfra.");
+                    alert("Gemt madplan er slettet. Du er nu på setup-siden og kan generere en ny prompt.");
                 }
             }
 
@@ -716,10 +725,8 @@
             const inputBørnAntal = document.getElementById('input-børn-antal');
             const inputBørnAlder = document.getElementById('input-børn-alder');
             
-            // ===== NYE REFERENCER START =====
             const inputVarighed = document.getElementById('input-varighed');
             const inputPris = document.getElementById('input-pris');
-            // ===== NYE REFERENCER SLUT =====
 
 
             function formaterInputTilPrompt(rawText) {
@@ -749,7 +756,7 @@
 - VIGTIGT: Planlæg portioner derefter. Aktive teenagere spiser ofte som eller mere end voksne.
 `;
                 
-                // 3. ===== NYT: Hent værdier fra rammer-inputfelter =====
+                // 3. Hent værdier fra rammer-inputfelter
                 const varighed = inputVarighed.value;
                 const pris = inputPris.value;
 
@@ -794,7 +801,7 @@ ${økonomiTekst}
 ${tilbudTekst}
 ]
 
-2.  **Prioriteret 'Stop-Madspild' Lager:** Forsøg at bruge følgende specifikke varer fra husstandens lager i opskrifterne:
+2.  **Prioritet 'Stop-Madspild' Lager:** Forsøg at bruge følgende specifikke varer fra husstandens lager i opskrifterne:
 [
 ${lagerTekst}
 ]
