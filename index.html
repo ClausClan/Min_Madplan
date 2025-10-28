@@ -137,9 +137,43 @@
             resize: vertical;
         }
 
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--grænse-farve);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            /* Sørger for at input-feltet ikke klistrer til labelen ovenover */
+            margin-bottom: 0.75rem; 
+        }
+
+        select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--grænse-farve);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            background-color: var(--hvid);
+            /* Fjerner grim default OS-styling */
+            -webkit-appearance: none; 
+            -moz-appearance: none;
+            appearance: none;
+            /* Tilføj en pil-indikator, da vi fjernede default */
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%208%20l5%205%205-5%22%20fill%3D%22none%22%20stroke%3D%22%23333%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 1.2em;
+        }
+
         textarea[readonly] {
             background-color: var(--lys-grå);
         }
+
+        
 
         .btn {
             display: inline-block;
@@ -292,6 +326,14 @@
             color: var(--primær-farve);
         }
 
+        .btn-advarsel {
+            background-color: #e74c3c; /* Rød advarselsfarve */
+            margin-top: 0.75rem; /* Lidt plads over knappen */
+        }
+        .btn-advarsel:hover {
+            background-color: #c0392b; /* Mørkere rød ved hover */
+        }
+
     </style>
 </head>
 <body>
@@ -305,13 +347,45 @@
         <main>
 
             <section id="setup" class="app-skærm active">
-                <h2>1. Indtast dine varer</h2>
-                <p>Find de bedste tilbud og tøm lageret for at bekæmpe madspild.</p>
+                
+                <h2>1. Angiv Husstand</h2>
+                <p>Hvem skal madplanen laves til?</p>
+
+                <label for="input-voksne-antal">Antal voksne</label>
+                <input type="number" id="input-voksne-antal" min="0" value="2">
+                
+                <label for="input-voksne-alder">Voksnes alder (f.eks. 35, 42)</label>
+                <input type="text" id="input-voksne-alder" placeholder="f.eks. 35, 42">
+
+                <label for="input-børn-antal">Antal børn/teenagere</label>
+                <input type="number" id="input-børn-antal" min="0" value="0">
+                
+                <label for="input-børn-alder">Børns/teenageres alder (f.eks. 14, 17)</label>
+                <input type="text" id="input-børn-alder" placeholder="f.eks. 14, 17">
+
+                <h2>2. Angiv Rammer</h2>
+                <p>Vælg varighed og et eventuelt budget.</p>
+
+                <label for="input-varighed">Planens Varighed (uger)</label>
+                <select id="input-varighed">
+                    <option value="1">1 Uge</option>
+                    <option value="2">2 Uger</option>
+                    <option value="3">3 Uger</option>
+                    <option value="4">4 Uger</option>
+                    <option value="5">5 Uger</option>
+                    <option value="6">6 Uger</option>
+                    <option value="7">7 Uger</option>
+                    <option value="8" selected>8 Uger</option>
+                </select>
+
+                <label for="input-pris">Ca. Budget pr. Måned (DKK)</label>
+                <input type="number" id="input-pris" placeholder="f.eks. 4000">
+                <h2>3. Indtast dine varer</h2> <p>Find de bedste tilbud og tøm lageret for at bekæmpe madspild.</p>
 
                 <div id="tilbudslinks">
-                    <a href="https://tilbudsavis.netto.dk/" target="_blank" rel="noopener">Netto Avis</a>
-                    <a href="https://rema1000.dk/tilbudsavis" target="_blank" rel="noopener">Rema 1000 Avis</a>
-                    <a href="https://www.coop365.dk/tilbudsavis" target="_blank" rel="noopener">Coop 365 Avis</a>
+                    <a href="https://netto.dk/netto-avisen/?utm_source=google&utm_medium=cpc&utm_campaign=15716389084&utm_content=138433833104&utm_term=netto%20tilbudsavis&gclsrc=aw.ds&gad_source=1&gad_campaignid=15716389084&gbraid=0AAAAAoWqUbkUPc93WA7xqIH5WV6-PNl6H&gclid=CjwKCAjw04HIBhB8EiwA8jGNbc6STcuLObi0UG94OZ_xCX487N17TEuZF5B188SN4Jur1c1PZfI1QxoC9ZAQAvD_BwE" target="_blank" rel="noopener">Netto Avis</a>
+                    <a href="https://shop.rema1000.dk/avis/" target="_blank" rel="noopener">Rema 1000 Avis</a>
+                    <a href="https://365discount.coop.dk/365avis/" target="_blank" rel="noopener">Coop 365 Avis</a>
                     <a href="https://l.ead.me/fb9Nqi" target="_blank" rel="noopener">Flere Aviser</a>
                 </div>
 
@@ -327,16 +401,15 @@
                 <button id="btn-generer-prompt" class="btn">Generer Prompt til AI</button>
 
                 <div id="prompt-output-container" style="display: none;">
-                    <h2>2. Kopier Prompt</h2>
-                    <p>Sæt prompten ind i din AI (ChatGPT, Gemini, etc.) og vent på JSON-svaret.</p>
+                    <h2>4. Kopier Prompt</h2> <p>Sæt prompten ind i din AI (ChatGPT, Gemini, etc.) og vent på JSON-svaret.</p>
                     <textarea id="prompt-output" rows="8" readonly></textarea>
                 </div>
 
                 <div id="json-input-container" style="display: none;">
-                    <h2>3. Indsæt Madplan (JSON)</h2>
-                    <p>Kopier AI'ens fulde JSON-svar og indsæt det herunder.</p>
+                    <h2>5. Indsæt Madplan (JSON)</h2> <p>Kopier AI'ens fulde JSON-svar og indsæt det herunder.</p>
                     <textarea id="json-input" rows="8" placeholder="Indsæt JSON-koden her..."></textarea>
                     <button id="btn-indlæs-json" class="btn btn-sekundær">Indlæs Madplan</button>
+                    <button id="btn-slet-madplan" class="btn btn-advarsel">Slet Gemt Madplan & Start Forfra</button>
                 </div>
             </section>
 
@@ -412,33 +485,51 @@
 
     </div> <script>
         document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Globale Variabler ---
+            let globalMadplanData = null;
+            let nuværendeUgeIndex = 0;
             
-            // --- Navigation i bunden ---
-            const navKnapper = document.querySelectorAll('.nav-btn');
+            // --- Globale referencer til skærme og titel ---
             const skærme = document.querySelectorAll('.app-skærm');
             const appTitel = document.getElementById('app-titel');
+            const madplanSkærm = document.getElementById('madplan');
+            const opskriftSkærm = document.getElementById('opskrift');
+            const setupSkærm = document.getElementById('setup');
+
+            // --- Referencer til UI-elementer, der skal opdateres ---
+            const ugeTitel = document.getElementById('uge-titel');
+            const ugeOversigtContainer = document.querySelector('.uge-oversigt');
+            const indkøbslisteTitel = document.getElementById('indkøbsliste-titel');
+            const indkøbslisteContainer = document.getElementById('indkøbsliste');
+            const opskriftTitel = document.getElementById('opskrift-titel');
+            const opskriftIngredienser = document.getElementById('opskrift-ingredienser');
+            const opskriftFremgangsmåde = document.getElementById('opskrift-fremgangsmåde');
+            const btnNæsteUge = document.getElementById('btn-næste-uge');
+            const btnForrigeUge = document.getElementById('btn-forrige-uge');
+
+
+            // ===================================================
+            // NAVIGATION
+            // ===================================================
+
+            const navKnapper = document.querySelectorAll('.nav-btn');
 
             function skiftSkærm(skærmId) {
-                // Skjul alle skærme
                 skærme.forEach(skærm => skærm.classList.remove('active'));
-                
-                // Fjern aktiv stil fra alle nav-knapper
                 navKnapper.forEach(knap => knap.classList.remove('active-tab'));
 
-                // Vis den valgte skærm
                 const aktivSkærm = document.getElementById(skærmId);
-                if (aktivSkærm) {
-                    aktivSkærm.classList.add('active');
-                }
+                if (aktivSkærm) aktivSkærm.classList.add('active');
 
-                // Opdater aktiv stil på nav-knap
                 const aktivKnap = document.querySelector(`.nav-btn[data-skærm="${skærmId}"]`);
                 if (aktivKnap) {
                     aktivKnap.classList.add('active-tab');
                     
-                    // Opdater header-titel
                     if (skærmId === 'setup') appTitel.textContent = 'Setup & Prompt';
-                    else if (skærmId === 'madplan') appTitel.textContent = 'Min Madplan';
+                    else if (skærmId === 'madplan' || skærmId === 'opskrift') {
+                        // Titel sættes af render-funktionerne
+                    }
                     else if (skærmId === 'indkøb') appTitel.textContent = 'Indkøbsliste';
                 }
             }
@@ -450,50 +541,362 @@
                 });
             });
 
-            // --- Falsk navigation til Opskrift (Mockup) ---
-            const dagKort = document.querySelectorAll('.dag-kort');
-            const opskriftSkærm = document.getElementById('opskrift');
-            const madplanSkærm = document.getElementById('madplan');
+            // --- Navigation: Fra Opskrift -> Madplan ---
             const tilbageKnap = document.getElementById('btn-tilbage-til-uge');
-
-            function visOpskrift() {
+            
+            function visOpskriftSkærm() {
                 madplanSkærm.classList.remove('active');
                 opskriftSkærm.classList.add('active');
                 appTitel.textContent = 'Opskrift';
             }
 
-            function visMadplan() {
+            function visMadplanSkærm() {
                 opskriftSkærm.classList.remove('active');
                 madplanSkærm.classList.add('active');
-                appTitel.textContent = 'Min Madplan';
+                if (globalMadplanData) {
+                    appTitel.textContent = `Madplan - Uge ${globalMadplanData.uger[nuværendeUgeIndex].ugeNummer}`;
+                }
             }
 
-            dagKort.forEach(kort => kort.addEventListener('click', visOpskrift));
-            tilbageKnap.addEventListener('click', visMadplan);
+            tilbageKnap.addEventListener('click', visMadplanSkærm);
 
+            // ===================================================
+            // FASE 3: Funktioner til at Vise Data (Render)
+            // ===================================================
 
-            // --- Falsk interaktiv indkøbsliste (Mockup) ---
-            const indkøbsItems = document.querySelectorAll('.indkøbs-item');
-            indkøbsItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    item.classList.toggle('checked');
+            function renderUgeplan(ugeIndex) {
+                if (!globalMadplanData) return;
+                const uge = globalMadplanData.uger[ugeIndex];
+                if (!uge) return;
+                ugeTitel.textContent = `Uge ${uge.ugeNummer}`;
+                appTitel.textContent = `Madplan - Uge ${uge.ugeNummer}`;
+                ugeOversigtContainer.innerHTML = '';
+                uge.dage.forEach((dag, dagIndex) => {
+                    const li = document.createElement('li');
+                    li.className = 'dag-kort';
+                    li.dataset.dagIndex = dagIndex;
+                    li.innerHTML = `
+                        <h3>${dag.dag}</h3>
+                        <p>${dag.retNavn}</p>
+                    `;
+                    ugeOversigtContainer.appendChild(li);
                 });
-            });
+                btnForrigeUge.disabled = (ugeIndex === 0);
+                btnNæsteUge.disabled = (ugeIndex >= globalMadplanData.uger.length - 1);
+            }
 
-            // --- Falsk Setup-flow (Mockup) ---
-            const genererKnap = document.getElementById('btn-generer-prompt');
+            function renderOpskrift(ugeIndex, dagIndex) {
+                if (!globalMadplanData) return;
+                const dag = globalMadplanData.uger[ugeIndex].dage[dagIndex];
+                if (!dag) return;
+                opskriftTitel.textContent = dag.retNavn;
+                opskriftIngredienser.innerHTML = '';
+                opskriftFremgangsmåde.innerHTML = '';
+                dag.ingredienser.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.mængde} ${item.navn}`;
+                    opskriftIngredienser.appendChild(li);
+                });
+                const steps = dag.fremgangsmåde.split(/\d+\.\s/).filter(step => step.trim() !== '');
+                steps.forEach(step => {
+                    const li = document.createElement('li');
+                    li.textContent = step.trim();
+                    opskriftFremgangsmåde.appendChild(li);
+                });
+            }
+
+            function renderIndkøbsliste(ugeIndex) {
+                if (!globalMadplanData) return;
+                const uge = globalMadplanData.uger[ugeIndex];
+                if (!uge) return;
+                indkøbslisteTitel.textContent = `Indkøbsliste (Uge ${uge.ugeNummer})`;
+                indkøbslisteContainer.innerHTML = '';
+                uge.indkøbsliste.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'indkøbs-item';
+                    let tekst = item.navn;
+                    if (item.mængde) tekst += ` (${item.mængde})`;
+                    if (item.note) tekst += ` - *${item.note}*`;
+                    li.textContent = tekst;
+                    indkøbslisteContainer.appendChild(li);
+                });
+            }
+
+
+            // ===================================================
+            // FASE 5: Funktioner til at Indlæse og Slette JSON
+            // ===================================================
+
+            const btnIndlæsJson = document.getElementById('btn-indlæs-json');
+            const jsonInput = document.getElementById('json-input');
+            const btnSletMadplan = document.getElementById('btn-slet-madplan');
+
+            function indlæsJSON() {
+                const jsonTekst = jsonInput.value;
+                if (!jsonTekst.trim()) {
+                    alert("Indsæt venligst JSON-data i feltet.");
+                    return;
+                }
+                try {
+                    const data = JSON.parse(jsonTekst);
+                    if (data && data.madplan && data.madplan.uger && data.madplan.uger.length > 0) {
+                        globalMadplanData = data.madplan;
+                        nuværendeUgeIndex = 0;
+                        localStorage.setItem('minMadplanData', JSON.stringify(globalMadplanData));
+                        console.log("Madplan indlæst og gemt!", globalMadplanData);
+                        renderUgeplan(nuværendeUgeIndex);
+                        renderIndkøbsliste(nuværendeUgeIndex);
+                        skiftSkærm('madplan');
+                        jsonInput.value = '';
+                    } else {
+                        alert("JSON-dataen ser ikke ud til at have det korrekte format. (Mangler 'madplan' eller 'uger')");
+                    }
+                } catch (error) {
+                    console.error("Fejl ved JSON parsing:", error);
+                    alert("Ugyldigt JSON-format. Kunne ikke indlæse madplanen. \nFejl: " + error.message);
+                }
+            }
+
+            function sletGemtMadplan() {
+                if (confirm("Er du sikker på, du vil slette den gemte madplan og starte forfra?")) {
+                    localStorage.removeItem('minMadplanData');
+                    globalMadplanData = null;
+                    nuværendeUgeIndex = 0;
+                    console.log("Madplan slettet fra localStorage.");
+
+                    ugeOversigtContainer.innerHTML = '';
+                    indkøbslisteContainer.innerHTML = '';
+                    ugeTitel.textContent = 'Madplan';
+                    indkøbslisteTitel.textContent = 'Indkøbsliste';
+
+                    document.getElementById('prompt-output-container').style.display = 'none';
+                    
+                    // Nulstil alle inputfelter
+                    document.getElementById('input-tilbud').value = '';
+                    document.getElementById('input-lager').value = '';
+                    document.getElementById('input-basis').value = '';
+                    document.getElementById('prompt-output').value = '';
+                    document.getElementById('json-input').value = '';
+                    
+                    document.getElementById('input-voksne-antal').value = '2';
+                    document.getElementById('input-voksne-alder').value = '';
+                    document.getElementById('input-børn-antal').value = '0';
+                    document.getElementById('input-børn-alder').value = '';
+
+                    // ===== NY NULSTILLING START =====
+                    document.getElementById('input-varighed').value = '8'; // Sæt til default
+                    document.getElementById('input-pris').value = '';
+                    // ===== NY NULSTILLING SLUT =====
+
+                    skiftSkærm('setup');
+                    alert("Gemt madplan er slettet. Du kan nu starte forfra.");
+                }
+            }
+
+            btnIndlæsJson.addEventListener('click', indlæsJSON);
+            btnSletMadplan.addEventListener('click', sletGemtMadplan);
+
+
+            // ===================================================
+            // FASE 4: PROMPT-GENERERING
+            // ===================================================
+            
+            const btnGenererPrompt = document.getElementById('btn-generer-prompt');
+            
+            // Referencer til alle inputfelter
+            const inputTilbud = document.getElementById('input-tilbud');
+            const inputLager = document.getElementById('input-lager');
+            const inputBasis = document.getElementById('input-basis');
             const promptOutputContainer = document.getElementById('prompt-output-container');
+            const promptOutput = document.getElementById('prompt-output');
             const jsonInputContainer = document.getElementById('json-input-container');
 
-            genererKnap.addEventListener('click', () => {
-                // Simpel visning af de næste steps
+            const inputVoksneAntal = document.getElementById('input-voksne-antal');
+            const inputVoksneAlder = document.getElementById('input-voksne-alder');
+            const inputBørnAntal = document.getElementById('input-børn-antal');
+            const inputBørnAlder = document.getElementById('input-børn-alder');
+            
+            // ===== NYE REFERENCER START =====
+            const inputVarighed = document.getElementById('input-varighed');
+            const inputPris = document.getElementById('input-pris');
+            // ===== NYE REFERENCER SLUT =====
+
+
+            function formaterInputTilPrompt(rawText) {
+                if (!rawText.trim()) return "";
+                const lines = rawText.split('\n');
+                return lines
+                    .filter(line => line.trim() !== '')
+                    .map(line => `    "${line.replace(/"/g, '\\"')}"`)
+                    .join(',\n');
+            }
+
+            function genererPrompt() {
+                // 1. Hent værdier fra vare-inputfelter
+                const tilbudTekst = formaterInputTilPrompt(inputTilbud.value);
+                const lagerTekst = formaterInputTilPrompt(inputLager.value);
+                const basisTekst = formaterInputTilPrompt(inputBasis.value);
+
+                // 2. Hent værdier fra husstand-inputfelter
+                const voksneAntal = inputVoksneAntal.value || '0';
+                const voksneAlder = inputVoksneAlder.value || 'ikke angivet';
+                const børnAntal = inputBørnAntal.value || '0';
+                const børnAlder = inputBørnAlder.value || 'ikke angivet';
+                
+                const målgruppeTekst = `
+- Antal voksne: ${voksneAntal} (Alder: ${voksneAlder})
+- Antal børn/teenagere: ${børnAntal} (Alder: ${børnAlder})
+- VIGTIGT: Planlæg portioner derefter. Aktive teenagere spiser ofte som eller mere end voksne.
+`;
+                
+                // 3. ===== NYT: Hent værdier fra rammer-inputfelter =====
+                const varighed = inputVarighed.value;
+                const pris = inputPris.value;
+
+                // 4. Byg den dynamiske Økonomi-regel
+                let økonomiTekst = `5.  **Økonomi:** Planen skal være prisfornuftig og minimere madspild. 40-60% økologisk.`;
+                if (pris) {
+                    økonomiTekst = `5.  **Økonomi:** Planen skal være prisfornuftig, minimere madspild og sigte efter et ca. månedligt madbudget på ${pris} DKK. 40-60% økologisk.`;
+                }
+
+                // 5. Byg JSON-prompt skabelonen
+                const promptSkabelon = `
+Generer en komplet madplan for ${varighed} uger til aftensmad.
+Outputtet skal være udelukkende i JSON-format. Generer kun den rene JSON-kodeblok, uden indledende eller afsluttende tekst.
+
+### Målgruppe for madplanen:
+${målgruppeTekst}
+
+### Kost-Filosofi og Sundhedsprincipper (VIGTIGT!)
+Maden skal være sund, næringsrig og primært baseret på **anti-inflammatoriske principper**. Portionerne skal være store og mættende for at dække energibehovet hos to aktive teenagere.
+* **Hovedfokus (Grøntsager):** Hver ret skal indeholde en betydelig mængde grøntsager. Prioritér **danske årstidsbestemte grøntsager** (kål, rodfrugter om vinteren; bær, ærter om sommeren).
+* **Gode Fedtstoffer:** Baser fedtindtaget på sunde kilder som **olivenolie**, **avocado**, **nødder**, **kerner** og **fed fisk**.
+* **Protein:** Sørg for rigeligt protein. Varier kilderne. Inkludér **fed fisk (f.eks. laks) mindst 1-2 gange om ugen**.
+* **Krydderier:** Vær generøs med anti-inflammatoriske krydderier som **gurkemeje**, **ingefær**, **hvidløg** og **chili**.
+* **Reducér:** Minimer brugen af stærkt forarbejdede fødevarer, tilsat sukker og raffinerede kornprodukter (foretræk fuldkorn).
+
+### AI'ens prioritering for planlægning
+1.  Først, byg planen op omkring "Hovedprioritet (Ugens Tilbud)".
+2.  Dernæst, indarbejd så mange varer som muligt fra "Prioritet 'Stop-Madspild' Lager".
+3.  Til sidst, brug fra "Almindelige Basisvarer" efter behov.
+
+### Regler for madplanen:
+1.  **Varighed:** ${varighed} hele uger.
+2.  **Variation:** Den samme ret må maksimalt optræde 2 gange i løbet af de ${varighed} uger.
+3.  **Sundhed:** Følg "Kost-Filosofi" ovenfor.
+4.  **Kød:** Maksimalt 3-4 dage med kød (inkl. fjerkræ og fisk) om ugen. Resten skal være vegetarisk.
+${økonomiTekst}
+
+### Input til planen:
+
+1.  **Hovedprioritet (Ugens Tilbud):** Opskrifterne (især Uge 1) SKAL designes med udgangspunkt i disse varer:
+[
+${tilbudTekst}
+]
+
+2.  **Prioriteret 'Stop-Madspild' Lager:** Forsøg at bruge følgende specifikke varer fra husstandens lager i opskrifterne:
+[
+${lagerTekst}
+]
+
+3.  **Almindelige Basisvarer:** Antag, at husstanden har følgende basisvarer (disse skal ikke på indkøbslisten, medmindre de bruges op):
+[
+${basisTekst}
+]
+
+### Struktur for output (JSON-format):
+Følg denne struktur nøjagtigt:
+{
+  "madplan": {
+    "totalUger": ${varighed},
+    "uger": [
+      {
+        "ugeNummer": 1,
+        "indkøbsliste": [
+          { "navn": "Hakket Oksekød", "mængde": "500g", "note": "På tilbud" }
+        ],
+        "dage": [
+          {
+            "dag": "Mandag",
+            "retNavn": "Kødsauce med fuldkornspasta",
+            "ingredienser": [
+              { "navn": "Hakket Oksekød", "mængde": "500g" }
+            ],
+            "fremgangsmåde": "1. Hak løg og hvidløg..."
+          }
+        ]
+      }
+    ]
+  }
+}
+`;
+                // 6. Sæt den genererede prompt ind i output-feltet
+                promptOutput.value = promptSkabelon.trim();
+
+                // 7. Vis de næste steps for brugeren
                 promptOutputContainer.style.display = 'block';
                 jsonInputContainer.style.display = 'block';
-                // (I den rigtige app ville vi generere prompten her)
+            }
+            btnGenererPrompt.addEventListener('click', genererPrompt);
+
+
+            // ===================================================
+            // DYNAMISKE EVENT LISTENERS
+            // ===================================================
+
+            indkøbslisteContainer.addEventListener('click', (event) => {
+                if (event.target.classList.contains('indkøbs-item')) {
+                    event.target.classList.toggle('checked');
+                }
             });
 
-            // Sæt startskærmen
-            skiftSkærm('setup');
+            ugeOversigtContainer.addEventListener('click', (event) => {
+                const kort = event.target.closest('.dag-kort');
+                if (kort) {
+                    const dagIndex = kort.dataset.dagIndex;
+                    renderOpskrift(nuværendeUgeIndex, dagIndex);
+                    visOpskriftSkærm();
+                }
+            });
+
+            btnNæsteUge.addEventListener('click', () => {
+                if (globalMadplanData && nuværendeUgeIndex < globalMadplanData.uger.length - 1) {
+                    nuværendeUgeIndex++;
+                    renderUgeplan(nuværendeUgeIndex);
+                    renderIndkøbsliste(nuværendeUgeIndex);
+                }
+            });
+
+            btnForrigeUge.addEventListener('click', () => {
+                if (nuværendeUgeIndex > 0) {
+                    nuværendeUgeIndex--;
+                    renderUgeplan(nuværendeUgeIndex);
+                    renderIndkøbsliste(nuværendeUgeIndex);
+                }
+            });
+
+
+            // ===================================================
+            // APP INITIALISERING (Start)
+            // ===================================================
+            
+            function startApp() {
+                const gemtData = localStorage.getItem('minMadplanData');
+                if (gemtData) {
+                    console.log("Fandt gemt madplan. Indlæser...");
+                    globalMadplanData = JSON.parse(gemtData);
+                    nuværendeUgeIndex = 0;
+                    renderUgeplan(nuværendeUgeIndex);
+                    renderIndkøbsliste(nuværendeUgeIndex);
+                    skiftSkærm('madplan');
+                } else {
+                    console.log("Ingen gemt madplan. Starter på setup.");
+                    skiftSkærm('setup');
+                }
+            }
+            
+            startApp(); // Kør appen!
+
         });
     </script>
 
