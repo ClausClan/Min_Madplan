@@ -334,6 +334,30 @@
             background-color: #c0392b; /* Mørkere rød ved hover */
         }
 
+        /* --- 10. Header Logo Styling --- */
+        .logo-h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem; /* Samme som før */
+            margin: 0;
+        }
+
+        .logo-svg {
+            width: 1.5em; /* Matcher font-størrelsen */
+            height: 1.5em;
+            margin-right: 0.5rem;
+        }
+
+        /* Dette er et trick: 
+           Vi har tegnet pupillerne i SVG'en, men vi
+           giver dem appens primære baggrundsfarve,
+           så det ligner, at de er "skåret ud".
+        */
+        .logo-svg circle {
+            fill: var(--primær-farve);
+        }
+
     </style>
 </head>
 <body>
@@ -341,7 +365,25 @@
     <div id="app-container">
 
         <header>
-            <h1 id="app-titel">Setup & Prompt</h1>
+            <h1 id="app-titel" class="logo-h1">
+                <svg class="logo-svg" 
+                     version="1.1" 
+                     viewBox="0 0 100 100" 
+                     xmlns="http://www.w3.org/2000/svg">
+                    <title>KøkkenKlog Logo</title>
+                    <path fill="#ffffff" 
+                          d="m75.6 23.3c-2.4-5.2-7.5-8.7-13.4-9.5-0.7-1.8-1.7-3.6-2.9-5-1.9-2.2-4.4-3.8-7.3-4.5-2.9-0.7-5.9-0.5-8.6 0.7-2.7 1.2-5.1 3.2-6.8 5.7-1.7 2.5-2.7 5.4-2.8 8.4-5.9 0.7-11 4.2-13.4 9.5-2.4 5.2-2.4 11.2 0 16.5h44.9c2.4-5.3 2.4-11.3 0-16.5z"/>
+                    <path fill="#ffffff" 
+                          d="m75.6 39.8h-51.2c-2.5 0-4.5 2-4.5 4.5v6.9h60.2v-6.9c0-2.5-2-4.5-4.5-4.5z"/>
+                    
+                    <path fill="#ffffff" 
+                          d="m77.8 86.8c-2.5 2.1-5.4 3.5-8.5 4.3-3.1 0.7-6.3 0.9-9.4 0.4-3.1-0.4-6.1-1.5-8.8-3.1-2.7-1.6-5.1-3.8-7-6.3-1.9-2.5-3.4-5.4-4.2-8.5-0.9-3.1-1-6.3-0.5-9.4 0.4-3.1 1.5-6.1 3.1-8.8 1.6-2.7 3.8-5.1 6.3-7 2.5-1.9 5.4-3.4 8.5-4.2 3.1-0.9 6.3-1 9.4-0.5 3.1 0.4 6.1 1.5 8.8 3.1 2.7 1.6 5.1 3.8 7 6.3 1.9 2.5 3.4 5.4 4.2 8.5 0.9 3.1 1 6.3 0.5 9.4-0.4 3.1-1.5 6.1-3.1 8.8-1.6 2.7-3.8 5.1-6.3 7z"/>
+                    
+                    <circle fill="#4CAF50" cx="38" cy="65" r="9"/>
+                    <circle fill="#4CAF50" cx="62" cy="65" r="9"/>
+                </svg>
+                <span>KøkkenKlog</span>
+            </h1>
         </header>
 
         <main>
@@ -490,9 +532,9 @@
             let globalMadplanData = null;
             let nuværendeUgeIndex = 0;
             
-            // --- Globale referencer til skærme og titel ---
+            // --- Globale referencer til skærme ---
             const skærme = document.querySelectorAll('.app-skærm');
-            const appTitel = document.getElementById('app-titel');
+            // const appTitel = document.getElementById('app-titel'); // FJERNET - Denne var problemet
             const madplanSkærm = document.getElementById('madplan');
             const opskriftSkærm = document.getElementById('opskrift');
             const setupSkærm = document.getElementById('setup');
@@ -526,11 +568,11 @@
                 if (aktivKnap) {
                     aktivKnap.classList.add('active-tab');
                     
-                    if (skærmId === 'setup') appTitel.textContent = 'Setup & Prompt';
-                    else if (skærmId === 'madplan' || skærmId === 'opskrift') {
-                        // Titel sættes af render-funktionerne
-                    }
-                    else if (skærmId === 'indkøb') appTitel.textContent = 'Indkøbsliste';
+                    // --- HELE DENNE BLOK ER FJERNET ---
+                    // if (skærmId === 'setup') appTitel.textContent = 'Setup & Prompt';
+                    // else if (skærmId === 'madplan' || skærmId === 'opskrift') { ... }
+                    // else if (skærmId === 'indkøb') appTitel.textContent = 'Indkøbsliste';
+                    // ---
                 }
             }
 
@@ -547,15 +589,13 @@
             function visOpskriftSkærm() {
                 madplanSkærm.classList.remove('active');
                 opskriftSkærm.classList.add('active');
-                appTitel.textContent = 'Opskrift';
+                // appTitel.textContent = 'Opskrift'; // FJERNET
             }
 
             function visMadplanSkærm() {
                 opskriftSkærm.classList.remove('active');
                 madplanSkærm.classList.add('active');
-                if (globalMadplanData) {
-                    appTitel.textContent = `Madplan - Uge ${globalMadplanData.uger[nuværendeUgeIndex].ugeNummer}`;
-                }
+                // if (globalMadplanData) { ... } // FJERNET
             }
 
             tilbageKnap.addEventListener('click', visMadplanSkærm);
@@ -569,7 +609,8 @@
                 const uge = globalMadplanData.uger[ugeIndex];
                 if (!uge) return;
                 ugeTitel.textContent = `Uge ${uge.ugeNummer}`;
-                appTitel.textContent = `Madplan - Uge ${uge.ugeNummer}`;
+                // appTitel.textContent = `Madplan - Uge ${uge.ugeNummer}`; // FJERNET
+                
                 ugeOversigtContainer.innerHTML = '';
                 uge.dage.forEach((dag, dagIndex) => {
                     const li = document.createElement('li');
@@ -657,21 +698,14 @@
                 }
             }
 
-            /**
-             * RETTET FUNKTION: Sletter kun den gemte madplan og nulstiller visningen.
-             * Beholder alle indtastninger på setup-siden.
-             */
             function sletGemtMadplan() {
-                // Opdateret bekræftelsestekst
                 if (confirm("Er du sikker på, du vil slette den gemte madplan? \nDine indtastninger på setup-siden (husstand, tilbud, osv.) bliver bevaret.")) {
                     
-                    // 1. Slet fra hukommelsen
                     localStorage.removeItem('minMadplanData');
                     globalMadplanData = null;
                     nuværendeUgeIndex = 0;
                     console.log("Madplan slettet fra localStorage.");
 
-                    // 2. Nulstil UI (visningerne), så de er tomme
                     ugeOversigtContainer.innerHTML = '';
                     indkøbslisteContainer.innerHTML = '';
                     ugeTitel.textContent = 'Madplan';
@@ -680,23 +714,10 @@
                     opskriftIngredienser.innerHTML = '';
                     opskriftFremgangsmåde.innerHTML = '';
 
-                    // 3. Ryd KUN output/input-felterne for prompt/json
                     document.getElementById('prompt-output-container').style.display = 'none';
                     document.getElementById('prompt-output').value = '';
                     document.getElementById('json-input').value = '';
                     
-                    // Fjerner IKKE længere værdier fra:
-                    // - input-tilbud
-                    // - input-lager
-                    // - input-basis
-                    // - input-voksne-antal
-                    // - input-voksne-alder
-                    // - input-børn-antal
-                    // - input-børn-alder
-                    // - input-varighed
-                    // - input-pris
-
-                    // 4. Gå til setup-skærmen
                     skiftSkærm('setup');
                     alert("Gemt madplan er slettet. Du er nu på setup-siden og kan generere en ny prompt.");
                 }
@@ -712,7 +733,6 @@
             
             const btnGenererPrompt = document.getElementById('btn-generer-prompt');
             
-            // Referencer til alle inputfelter
             const inputTilbud = document.getElementById('input-tilbud');
             const inputLager = document.getElementById('input-lager');
             const inputBasis = document.getElementById('input-basis');
@@ -739,12 +759,10 @@
             }
 
             function genererPrompt() {
-                // 1. Hent værdier fra vare-inputfelter
                 const tilbudTekst = formaterInputTilPrompt(inputTilbud.value);
                 const lagerTekst = formaterInputTilPrompt(inputLager.value);
                 const basisTekst = formaterInputTilPrompt(inputBasis.value);
 
-                // 2. Hent værdier fra husstand-inputfelter
                 const voksneAntal = inputVoksneAntal.value || '0';
                 const voksneAlder = inputVoksneAlder.value || 'ikke angivet';
                 const børnAntal = inputBørnAntal.value || '0';
@@ -756,17 +774,14 @@
 - VIGTIGT: Planlæg portioner derefter. Aktive teenagere spiser ofte som eller mere end voksne.
 `;
                 
-                // 3. Hent værdier fra rammer-inputfelter
                 const varighed = inputVarighed.value;
                 const pris = inputPris.value;
 
-                // 4. Byg den dynamiske Økonomi-regel
                 let økonomiTekst = `5.  **Økonomi:** Planen skal være prisfornuftig og minimere madspild. 40-60% økologisk.`;
                 if (pris) {
                     økonomiTekst = `5.  **Økonomi:** Planen skal være prisfornuftig, minimere madspild og sigte efter et ca. månedligt madbudget på ${pris} DKK. 40-60% økologisk.`;
                 }
 
-                // 5. Byg JSON-prompt skabelonen
                 const promptSkabelon = `
 Generer en komplet madplan for ${varighed} uger til aftensmad.
 Outputtet skal være udelukkende i JSON-format. Generer kun den rene JSON-kodeblok, uden indledende eller afsluttende tekst.
@@ -837,10 +852,8 @@ Følg denne struktur nøjagtigt:
   }
 }
 `;
-                // 6. Sæt den genererede prompt ind i output-feltet
                 promptOutput.value = promptSkabelon.trim();
 
-                // 7. Vis de næste steps for brugeren
                 promptOutputContainer.style.display = 'block';
                 jsonInputContainer.style.display = 'block';
             }
