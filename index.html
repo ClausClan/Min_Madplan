@@ -464,6 +464,9 @@
 
                     <label for="input-uger">Antal Uger (1-8)</label>
                     <input type="number" id="input-uger" class="input-felt" value="1" min="1" max="8">
+
+                    <label for="input-allergi">Allergier & Emner der skal undgås</label>
+                    <textarea id="input-allergi" rows="3" placeholder="f.eks.&#10;Nødder (alle slags)&#10;Skaldyr&#10;Kan ikke lide svampe"></textarea>
                 </div>
 
                 <h2>2. Aviser & Tilbud</h2>
@@ -647,6 +650,7 @@
             const inputVoksneAlder = document.getElementById('input-voksne-alder');
             const inputBoernAntal = document.getElementById('input-boern-antal');
             const inputBoernAlder = document.getElementById('input-boern-alder');
+            const inputAllergi = document.getElementById('input-allergi'); // NYT
 
             // Referencer til tjekbokse
             const checkNetto = document.getElementById('check-netto');
@@ -768,9 +772,6 @@
                 sorterOgVisIndkøbsliste();
             }
 
-            /**
-             * OPDATERET: Viser nu prisen på varen
-             */
             function sorterOgVisIndkøbsliste() {
                 if (!globalMadplanData) return;
 
@@ -800,9 +801,7 @@
                     
                     let tekst = item.navn;
 
-                    // NYT: Tilføj pris, hvis den findes
                     if (item.pris) {
-                        // Sørg for at formatere prisen pænt, hvis det er et tal
                         let prisTekst = typeof item.pris === 'number' ? item.pris.toFixed(2) : item.pris;
                         tekst += ` - ${prisTekst} kr.`;
                     }
@@ -825,7 +824,6 @@
                     
                     li.textContent = tekst;
                     
-                    // Gendan 'checked' status fra den originale data
                     if (item.checked) {
                         li.classList.add('checked');
                     }
@@ -880,7 +878,7 @@
 
 
             // ===================================================
-            // FASE 4: PROMPT-GENERERING (OPDATERET JSON-STRUKTUR)
+            // FASE 4: PROMPT-GENERERING (OPDATERET)
             // ===================================================
 
             function formaterInputTilPrompt(rawText) {
@@ -898,6 +896,7 @@
                 const lagerTekst = formaterInputTilPrompt(inputLager.value);
                 const basisTekst = formaterInputTilPrompt(inputBasis.value);
                 const manuelleTilbudTekst = formaterInputTilPrompt(inputTilbud.value);
+                const allergiTekst = formaterInputTilPrompt(inputAllergi.value); // NYT
 
                 // 2. Byg "Målgruppe"-sektionen dynamisk
                 let målgruppeTekst = [];
@@ -982,14 +981,18 @@ Hvert aftensmåltid skal være et komplet, ernæringsmæssigt afbalanceret målt
 3.  **Prioritet 3 (P3):** Brug fra "Almindelige Basisvarer" efter behov.
 
 ### Regler for madplanen:
-1.  **Varighed:** ${antalUger} hele uger.
-2.  **Variation:** Den samme ret må maksimalt optræde 2 gange i løbet af de ${antalUger} uger.
-3.  **Sundhed:** Følg "Kost-Filosofi" og "Videnskabelig Sammensætning" ovenfor.
-4.  **Kød (Justeret):**
+1.  **VIGTIGT - Undgå Emner:** Følgende emner må **ALDRIG** indgå i madplanen (pga. allergi eller stærke præferencer). Undgå selv hvis listen er tom:
+[
+${allergiTekst}
+]
+2.  **Varighed:** ${antalUger} hele uger.
+3.  **Variation:** Den samme ret må maksimalt optræde 2 gange i løbet af de ${antalUger} uger.
+4.  **Sundhed:** Følg "Kost-Filosofi" og "Videnskabelig Sammensætning" ovenfor.
+5.  **Kød (Justeret):**
     * Maksimalt 3-4 aftensmåltider med kød (inkl. fjerkræ og fisk) om ugen.
     * Følg de officielle kostråd: Begræns det samlede indtag af **rødt kød** (okse, svin, lam) til **maksimalt 350 gram om ugen pr. person**. AI'en skal selv beregne den samlede ugentlige mængde for husstanden baseret på "Målgruppe".
     * Prioritér fisk og fjerkræ de dage, der er kød.
-5.  **Økonomi:** Planen skal være prisfornuftig, minimere madspild og sigte efter et ca. månedligt madbudget på 4000 DKK. 40-60% økologisk.
+6.  **Økonomi:** Planen skal være prisfornuftig, minimere madspild og sigte efter et ca. månedligt madbudget på 4000 DKK. 40-60% økologisk.
 
 ### Input til planen:
 
