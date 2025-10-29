@@ -6,25 +6,36 @@
     <title>Min Madplan App</title>
 
     <style>
-        /* --- 1. Grundlæggende Styling --- */
+        /* --- 1. Importer en "Fancy" Google Font --- */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        /* --- 2. Ny, raffineret Farvepalette --- */
         :root {
-            --primær-farve: #4CAF50; /* Grøn */
-            --sekundær-farve: #FFC107; /* Rav */
-            --tekst-farve: #333;
-            --lys-grå: #f4f4f4;
-            --grænse-farve: #ddd;
+            --primær-farve: #27ae60; /* En dybere, mere "organisk" grøn */
+            --sekundær-farve: #f39c12; /* En varmere, gylden rav */
+            --tekst-farve: #34495e; /* En blødere mørk blå-grå */
+            --lys-grå: #f9f9f9; /* En lysere, renere baggrund */
+            --grænse-farve: #ecf0f1; /* En meget blød kantfarve */
             --hvid: #ffffff;
-            --knap-aktiv: #45a049;
+            --knap-aktiv: #2ecc71; /* En lysere grøn til hover */
+            
+            /* Vi definerer en standard-skygge */
+            --blød-skygge: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --stærk-skygge: 0 6px 16px rgba(0, 0, 0, 0.08);
         }
 
+        /* --- 3. Generel Opgradering --- */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            /* Smidige overgange på ALT som standard */
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         html, body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            /* Brug den nye skrifttype! */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--lys-grå);
             color: var(--tekst-farve);
             height: 100%;
@@ -35,16 +46,17 @@
             justify-content: center;
         }
 
-        /* --- 2. App Container --- */
+        /* --- 4. "Fancy" App Container & Header --- */
         #app-container {
             width: 100%;
-            max-width: 600px; /* Mobil-bredde */
+            max-width: 600px;
             height: 100%;
             background-color: var(--hvid);
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            /* En stærkere skygge på selve appen */
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
-            overflow: hidden; /* Forhindrer scroll på hele appen */
+            overflow: hidden;
         }
 
         header {
@@ -52,38 +64,40 @@
             color: var(--hvid);
             padding: 1.2rem 1rem;
             text-align: center;
+            /* Tilføj dybde med en skygge */
+            box-shadow: var(--blød-skygge);
+            /* Sørger for at skyggen ligger pænt over indholdet */
+            position: relative;
+            z-index: 10;
         }
 
         header h1 {
             font-size: 1.5rem;
             margin: 0;
+            font-weight: 700; /* Lidt federe titel */
         }
 
         main {
-            flex-grow: 1; /* Fylder resten af højden */
-            overflow-y: auto; /* Tillader scroll KUN på main-indholdet */
-            padding: 1rem;
-            padding-bottom: 80px; /* Plads til bundmenuen */
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 1.5rem; /* Lidt mere luft */
+            padding-bottom: 80px;
         }
 
-        /* --- 3. Skærm-styring (Tabs) --- */
-        .app-skærm {
-            display: none; /* Skjult som standard */
-        }
+        /* --- 5. "Fancy" Navigation --- */
+        .app-skærm { display: none; }
+        .app-skærm.active { display: block; }
 
-        .app-skærm.active {
-            display: block; /* Vises når aktiv */
-        }
-
-        /* --- 4. Bund-navigation --- */
         #app-nav {
             position: fixed;
             bottom: 0;
             width: 100%;
-            max-width: 600px; /* Matcher container */
+            max-width: 600px;
             display: flex;
             background-color: var(--hvid);
             border-top: 1px solid var(--grænse-farve);
+            /* Tilføj en skygge øverst på nav-baren */
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.03);
             z-index: 100;
         }
 
@@ -91,81 +105,92 @@
             flex-grow: 1;
             padding: 1rem 0.5rem;
             font-size: 0.8rem;
-            font-weight: bold;
+            font-weight: 600; /* Lidt blødere end 700 */
             text-transform: uppercase;
-            color: var(--tekst-farve);
+            color: #95a5a6; /* Gør inaktive knapper mere neutrale */
             background: none;
             border: none;
+            border-top: 3px solid transparent; /* Gennemsigtig kant */
             cursor: pointer;
-            transition: background-color 0.2s;
+            /* Smidig overgang! */
+            transition: color 0.3s ease, border-top-color 0.3s ease;
         }
 
         #app-nav button:hover {
-            background-color: var(--lys-grå);
+            color: var(--primær-farve);
+            background-color: transparent;
         }
 
         #app-nav button.active-tab {
             color: var(--primær-farve);
-            border-top: 3px solid var(--primær-farve);
+            border-top-color: var(--primær-farve);
             padding-top: calc(1rem - 3px);
         }
 
-        /* --- 5. Generelle Komponenter (Knapper, Felter) --- */
+        /* --- 6. "Fancy" Komponenter (Knapper, Felter) --- */
         h2 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
             color: var(--primær-farve);
-            border-bottom: 2px solid var(--lys-grå);
+            border-bottom: 2px solid var(--grænse-farve);
             padding-bottom: 0.5rem;
+            font-weight: 700;
         }
 
         label {
             display: block;
-            font-weight: bold;
+            font-weight: 600;
             margin-top: 1rem;
             margin-bottom: 0.5rem;
+            color: var(--tekst-farve);
+        }
+
+        /* Fælles stil for alle input-felter */
+        textarea,
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 0.75rem 1rem; /* Lidt mere padding */
+            border: 1px solid var(--grænse-farve);
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            background-color: var(--hvid);
+            box-shadow: var(--blød-skygge);
+            /* Smidig overgang på fokus */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        /* Gør dem "fancy" når man klikker */
+        textarea:focus,
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--primær-farve);
+            box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2); /* Grøn "glow" */
         }
 
         textarea {
-            width: 100%;
             min-height: 100px;
-            padding: 0.75rem;
-            border: 1px solid var(--grænse-farve);
-            border-radius: 8px;
-            font-family: inherit;
-            font-size: 1rem;
             resize: vertical;
+            margin-bottom: 0.75rem;
         }
 
         input[type="text"],
         input[type="number"] {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid var(--grænse-farve);
-            border-radius: 8px;
-            font-family: inherit;
-            font-size: 1rem;
-            /* Sørger for at input-feltet ikke klistrer til labelen ovenover */
             margin-bottom: 0.75rem; 
         }
 
         select {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid var(--grænse-farve);
-            border-radius: 8px;
-            font-family: inherit;
-            font-size: 1rem;
             margin-bottom: 0.75rem;
-            background-color: var(--hvid);
-            /* Fjerner grim default OS-styling */
             -webkit-appearance: none; 
             -moz-appearance: none;
             appearance: none;
-            /* Tilføj en pil-indikator, da vi fjernede default */
-            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%208%20l5%205%205-5%22%20fill%3D%22none%22%20stroke%3D%22%23333%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E');
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%208%20l5%205%205-5%22%20fill%3D%22none%22%20stroke%3D%22%2334495e%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E');
             background-repeat: no-repeat;
-            background-position: right 0.75rem center;
+            background-position: right 1rem center;
             background-size: 1.2em;
         }
 
@@ -173,14 +198,13 @@
             background-color: var(--lys-grå);
         }
 
-        
-
+        /* "Fancy" Knapper */
         .btn {
             display: inline-block;
             width: 100%;
             padding: 1rem;
             font-size: 1rem;
-            font-weight: bold;
+            font-weight: 700;
             color: var(--hvid);
             background-color: var(--primær-farve);
             border: none;
@@ -188,84 +212,93 @@
             cursor: pointer;
             text-align: center;
             margin-top: 1rem;
-            transition: background-color 0.2s;
+            box-shadow: var(--blød-skygge);
+            /* Smidig overgang på hover */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
         }
 
+        /* "Løft" knappen når man holder musen over */
         .btn:hover {
             background-color: var(--knap-aktiv);
+            transform: translateY(-2px);
+            box-shadow: var(--stærk-skygge);
+        }
+
+        .btn:active {
+            transform: translateY(0); /* Tryk knappen ned */
         }
 
         .btn-sekundær {
             background-color: var(--sekundær-farve);
-            color: #333;
+            color: var(--hvid);
         }
         .btn-sekundær:hover {
-            background-color: #ffb300;
+            background-color: #f1c40f; /* Lysere rav */
+        }
+        
+        .btn-advarsel {
+            background-color: #e74c3c;
+            margin-top: 0.75rem;
+        }
+        .btn-advarsel:hover {
+            background-color: #c0392b;
         }
 
-
-        /* --- 6. Skærm: Setup (#setup) --- */
+        /* --- 7. "Fancy" Kort (Madplan & Opskrift) --- */
         #tilbudslinks {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0.5rem;
             margin-bottom: 1rem;
         }
-
         #tilbudslinks a {
             display: block;
             padding: 0.75rem;
-            background-color: var(--lys-grå);
+            background-color: var(--hvid);
             border: 1px solid var(--grænse-farve);
             border-radius: 8px;
             text-decoration: none;
             color: var(--tekst-farve);
-            font-weight: bold;
+            font-weight: 600;
             text-align: center;
+            box-shadow: var(--blød-skygge);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        #tilbudslinks a:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--stærk-skygge);
         }
         
-        #prompt-output-container {
-            margin-top: 1.5rem;
-            border-top: 2px solid var(--lys-grå);
-            padding-top: 1rem;
-        }
-
-        /* --- 7. Skærm: Madplan (#madplan) --- */
-        .uge-oversigt {
-            list-style: none;
-        }
+        .uge-oversigt { list-style: none; }
 
         .dag-kort {
             background-color: var(--hvid);
             border: 1px solid var(--grænse-farve);
             border-radius: 8px;
-            padding: 1rem;
+            padding: 1rem 1.25rem; /* Mere luft */
             margin-bottom: 0.75rem;
             cursor: pointer;
-            transition: box-shadow 0.2s;
+            box-shadow: var(--blød-skygge);
+            /* Smidig overgang! */
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
         }
 
         .dag-kort:hover {
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            box-shadow: var(--stærk-skygge);
+            transform: translateY(-3px);
         }
 
         .dag-kort h3 {
             font-size: 1.1rem;
+            font-weight: 600;
             color: var(--primær-farve);
             margin-bottom: 0.25rem;
         }
-
         .dag-kort p {
             font-size: 1rem;
             color: var(--tekst-farve);
         }
-
-
-        /* --- 8. Skærm: Opskrift (#opskrift) --- */
-        #opskrift-container {
-            padding-bottom: 1rem;
-        }
-
+        
         #opskrift-container .btn-tilbage {
             width: auto;
             display: inline-block;
@@ -274,51 +307,60 @@
             background-color: var(--lys-grå);
             color: var(--tekst-farve);
             margin-bottom: 1rem;
+            box-shadow: var(--blød-skygge);
         }
         #opskrift-container .btn-tilbage:hover {
              background-color: var(--grænse-farve);
+             transform: translateY(-2px);
+             box-shadow: var(--stærk-skygge);
         }
 
         #opskrift-container h3 {
             font-size: 1.1rem;
             margin-top: 1.5rem;
             margin-bottom: 0.5rem;
+            font-weight: 600;
         }
 
         #opskrift-ingredienser li,
         #opskrift-fremgangsmåde li {
             margin-left: 1.2rem;
             margin-bottom: 0.5rem;
-            line-height: 1.4;
+            line-height: 1.5; /* Bedre læsbarhed */
+        }
+        #opskrift-fremgangsmåde li {
+            margin-bottom: 1rem; /* Mere plads mellem steps */
         }
 
-        /* --- 9. Skærm: Indkøb (#indkøb) --- */
-        #indkøbsliste {
-            list-style: none;
-        }
+        /* --- 8. "Fancy" Indkøbsliste --- */
+        #indkøbsliste { list-style: none; }
 
         .indkøbs-item {
             font-size: 1.1rem;
             padding: 1rem 0.5rem;
             border-bottom: 1px solid var(--grænse-farve);
             cursor: pointer;
-            user-select: none; /* Forhindrer tekst-markering ved klik */
+            user-select: none;
             display: flex;
             align-items: center;
+            /* Smidig overgang! */
+            transition: color 0.3s ease, text-decoration-color 0.3s ease;
         }
         
-        /* Simpel "checkbox" effekt */
         .indkøbs-item::before {
             content: '☐';
             display: inline-block;
             margin-right: 0.75rem;
             font-size: 1.3rem;
             color: var(--grænse-farve);
+            /* Smidig overgang! */
+            transition: color 0.3s ease, content 0.3s ease;
         }
 
         .indkøbs-item.checked {
-            color: #999;
+            color: #bdc3c7; /* Lysere grå */
             text-decoration: line-through;
+            text-decoration-color: #bdc3c7;
         }
 
         .indkøbs-item.checked::before {
@@ -326,36 +368,20 @@
             color: var(--primær-farve);
         }
 
-        .btn-advarsel {
-            background-color: #e74c3c; /* Rød advarselsfarve */
-            margin-top: 0.75rem; /* Lidt plads over knappen */
-        }
-        .btn-advarsel:hover {
-            background-color: #c0392b; /* Mørkere rød ved hover */
-        }
-
-        /* --- 10. Header Logo Styling --- */
+        /* --- 9. Logo Styling (Fra sidst) --- */
         .logo-h1 {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem; /* Samme som før */
+            font-size: 1.5rem;
             margin: 0;
+            font-weight: 700;
         }
 
         .logo-svg {
-            width: 1.5em; /* Matcher font-størrelsen */
+            width: 1.5em;
             height: 1.5em;
             margin-right: 0.5rem;
-        }
-
-        /* Dette er et trick: 
-           Vi har tegnet pupillerne i SVG'en, men vi
-           giver dem appens primære baggrundsfarve,
-           så det ligner, at de er "skåret ud".
-        */
-        .logo-svg circle {
-            fill: var(--primær-farve);
         }
 
     </style>
@@ -366,22 +392,8 @@
 
         <header>
             <h1 id="app-titel" class="logo-h1">
-                <svg class="logo-svg" 
-                     version="1.1" 
-                     viewBox="0 0 100 100" 
-                     xmlns="http://www.w3.org/2000/svg">
-                    <title>KøkkenKlog Logo</title>
-                    <path fill="#ffffff" 
-                          d="m75.6 23.3c-2.4-5.2-7.5-8.7-13.4-9.5-0.7-1.8-1.7-3.6-2.9-5-1.9-2.2-4.4-3.8-7.3-4.5-2.9-0.7-5.9-0.5-8.6 0.7-2.7 1.2-5.1 3.2-6.8 5.7-1.7 2.5-2.7 5.4-2.8 8.4-5.9 0.7-11 4.2-13.4 9.5-2.4 5.2-2.4 11.2 0 16.5h44.9c2.4-5.3 2.4-11.3 0-16.5z"/>
-                    <path fill="#ffffff" 
-                          d="m75.6 39.8h-51.2c-2.5 0-4.5 2-4.5 4.5v6.9h60.2v-6.9c0-2.5-2-4.5-4.5-4.5z"/>
-                    
-                    <path fill="#ffffff" 
-                          d="m77.8 86.8c-2.5 2.1-5.4 3.5-8.5 4.3-3.1 0.7-6.3 0.9-9.4 0.4-3.1-0.4-6.1-1.5-8.8-3.1-2.7-1.6-5.1-3.8-7-6.3-1.9-2.5-3.4-5.4-4.2-8.5-0.9-3.1-1-6.3-0.5-9.4 0.4-3.1 1.5-6.1 3.1-8.8 1.6-2.7 3.8-5.1 6.3-7 2.5-1.9 5.4-3.4 8.5-4.2 3.1-0.9 6.3-1 9.4-0.5 3.1 0.4 6.1 1.5 8.8 3.1 2.7 1.6 5.1 3.8 7 6.3 1.9 2.5 3.4 5.4 4.2 8.5 0.9 3.1 1 6.3 0.5 9.4-0.4 3.1-1.5 6.1-3.1 8.8-1.6 2.7-3.8 5.1-6.3 7z"/>
-                    
-                    <circle fill="#4CAF50" cx="38" cy="65" r="9"/>
-                    <circle fill="#4CAF50" cx="62" cy="65" r="9"/>
-                </svg>
+                
+                <img src="logo.png" alt="KøkkenKlog Logo" class="logo-svg">
                 <span>KøkkenKlog</span>
             </h1>
         </header>
@@ -428,7 +440,7 @@
                     <a href="https://netto.dk/netto-avisen/?utm_source=google&utm_medium=cpc&utm_campaign=15716389084&utm_content=138433833104&utm_term=netto%20tilbudsavis&gclsrc=aw.ds&gad_source=1&gad_campaignid=15716389084&gbraid=0AAAAAoWqUbkUPc93WA7xqIH5WV6-PNl6H&gclid=CjwKCAjw04HIBhB8EiwA8jGNbc6STcuLObi0UG94OZ_xCX487N17TEuZF5B188SN4Jur1c1PZfI1QxoC9ZAQAvD_BwE" target="_blank" rel="noopener">Netto Avis</a>
                     <a href="https://shop.rema1000.dk/avis/" target="_blank" rel="noopener">Rema 1000 Avis</a>
                     <a href="https://365discount.coop.dk/365avis/" target="_blank" rel="noopener">Coop 365 Avis</a>
-                    <a href="https://l.ead.me/fb9Nqi" target="_blank" rel="noopener">Flere Aviser</a>
+                    <a href="https://www.bilka.dk/bilkaavisen/?utm_source=google&utm_medium=cpc&utm_campaign=15058154379&utm_content=134559319811&utm_term=bilka%20tilbudsavis&gclsrc=aw.ds&gad_source=1&gad_campaignid=15058154379&gbraid=0AAAAAoN7jvu6MBnkV00fSnir3xuBcG0vS&gclid=CjwKCAjw04HIBhB8EiwA8jGNbYHpj8V1TnI4Pws4cPKLIJHCoTf1yyLxxohvCDJ56JjvKNY56-lZRRoCUXwQAvD_BwE" target="_blank" rel="noopener">Bilka Avis</a>
                 </div>
 
                 <label for="input-tilbud">Ugens Tilbud (AI Prioritet 1)</label>
@@ -526,6 +538,22 @@
         </nav>
 
     </div> <script>
+        // Tjek om browseren understøtter service workers
+        if ('serviceWorker' in navigator) {
+            // Vent til siden er fuldt indlæst, før vi registrerer
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then((registration) => {
+                        console.log('Service Worker registreret succesfuldt:', registration);
+                    })
+                    .catch((error) => {
+                        console.error('Service Worker registrering fejlede:', error);
+                    });
+            });
+        }
+    </script>
+
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
 
             // --- Globale Variabler ---
