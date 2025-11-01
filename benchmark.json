@@ -1,0 +1,6864 @@
+{
+  "Velsmag dansk julemedister konventionel": {
+    "avg": 28.57,
+    "min": 28.57,
+    "max": 28.57,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 28.57,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "300-350g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Naturli' økologisk smørbar økologisk": {
+    "avg": 50,
+    "min": 50,
+    "max": 50,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 50,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "200g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Pålækker pålæg eller salami-hapser konventionel": {
+    "avg": 111.11,
+    "min": 111.11,
+    "max": 111.11,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 111.11,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "50-90g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Schulstad Det Gode brød konventionel": {
+    "avg": 12.63,
+    "min": 12.63,
+    "max": 12.63,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 12.63,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 12,
+        "mængde": "360-950g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Buko flødeost konventionel": {
+    "avg": 50,
+    "min": 50,
+    "max": 50,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 50,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "200g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Premieur confit de canard konventionel": {
+    "avg": 73.33,
+    "min": 73.33,
+    "max": 73.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 73.33,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 99,
+        "mængde": "1350g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Glyngøre tun i olie/tomat/vand konventionel": {
+    "avg": 66.67,
+    "min": 66.67,
+    "max": 66.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 66.67,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "105-150g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Andoni italiensk pizza konventionel": {
+    "avg": 47.96,
+    "min": 47.96,
+    "max": 47.96,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 47.96,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 20,
+        "mængde": "402-417g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Harvest Best kartofler på glas konventionel": {
+    "avg": 16.47,
+    "min": 16.47,
+    "max": 16.47,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 16.47,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 7,
+        "mængde": "425g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Arla Lactofree økologisk mælk økologisk": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 12,
+        "mængde": "1L",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Egelykke danske skrabeæg konventionel": {
+    "avg": 14,
+    "min": 14,
+    "max": 14,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 14,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 14,
+        "mængde": "10 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "La Campagna fettuccine konventionel": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 5,
+        "mængde": "250g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "La Campagna hummus konventionel": {
+    "avg": 50,
+    "min": 50,
+    "max": 50,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 50,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "200g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Perfect Season økologisk falafel økologisk": {
+    "avg": 87.72,
+    "min": 87.72,
+    "max": 87.72,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 87.72,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 25,
+        "mængde": "285g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Lykkeliga danske kartofler konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "1kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Premieur fuldkornspitabrød konventionel": {
+    "avg": 52.38,
+    "min": 52.38,
+    "max": 52.38,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 52.38,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 22,
+        "mængde": "420g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Velsmag lakse- eller ørredstykke konventionel": {
+    "avg": 196.67,
+    "min": 196.67,
+    "max": 196.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 196.67,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 59,
+        "mængde": "300g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologiske hakkede tomater økologisk": {
+    "avg": 12.5,
+    "min": 12.5,
+    "max": 12.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 12.5,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 5,
+        "mængde": "400g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologiske kikærter økologisk": {
+    "avg": 19.84,
+    "min": 19.84,
+    "max": 19.84,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 19.84,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 5,
+        "mængde": "242-252g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologisk fusilli pasta økologisk": {
+    "avg": 22,
+    "min": 22,
+    "max": 22,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 22,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 11,
+        "mængde": "500g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologisk olivenolie økologisk": {
+    "avg": 49,
+    "min": 49,
+    "max": 49,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 49,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 49,
+        "mængde": "500ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologiske havregryn økologisk": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "kg",
+    "count": 2,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "1kg",
+        "dato": "2025-11-01"
+      },
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "1kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologiske grøntsager/wokblanding økologisk": {
+    "avg": 26,
+    "min": 26,
+    "max": 26,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 26,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 13,
+        "mængde": "300-500g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologiske danske gulerødder økologisk": {
+    "avg": 18.75,
+    "min": 18.75,
+    "max": 18.75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 18.75,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 15,
+        "mængde": "800g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologiske æbler økologisk": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 20,
+        "mængde": "1kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologisk skiveost økologisk": {
+    "avg": 125,
+    "min": 125,
+    "max": 125,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 125,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 25,
+        "mængde": "200g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Arla ØKO smør økologisk": {
+    "avg": 100,
+    "min": 100,
+    "max": 100,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 100,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 20,
+        "mængde": "200g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Løgismose økologisk skyr økologisk": {
+    "avg": 25,
+    "min": 25,
+    "max": 25,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 25,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 20,
+        "mængde": "800g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Medjool dadler økologisk": {
+    "avg": 98,
+    "min": 98,
+    "max": 98,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 98,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 49,
+        "mængde": "400-500g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Dansk spidskål konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 2,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      },
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "pr. stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kaki konventionel": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 20,
+        "mængde": "1kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Formodnede avocadoer konventionel": {
+    "avg": 22,
+    "min": 22,
+    "max": 22,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 22,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 22,
+        "mængde": "3 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Velsmag kyllingebrystfilet konventionel": {
+    "avg": 75,
+    "min": 75,
+    "max": 75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 75,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 75,
+        "mængde": "1kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Velsmag hakket oksekød 8-12% konventionel": {
+    "avg": 98.75,
+    "min": 98.75,
+    "max": 98.75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 98.75,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 79,
+        "mængde": "800g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Rose dansk hel kylling konventionel": {
+    "avg": 33.33,
+    "min": 33.33,
+    "max": 33.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 33.33,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 45,
+        "mængde": "1350g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Premieur fersk andelår konventionel": {
+    "avg": 89.29,
+    "min": 89.29,
+    "max": 89.29,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 89.29,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 25,
+        "mængde": "200-280g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Premieur fersk andebryst konventionel": {
+    "avg": 139.29,
+    "min": 139.29,
+    "max": 139.29,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 139.29,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 39,
+        "mængde": "200-280g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Premieur confiteret andebryst konventionel": {
+    "avg": 181.82,
+    "min": 181.82,
+    "max": 181.82,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 181.82,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 40,
+        "mængde": "220g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Premieur dansk krogmodnet kotelet konventionel": {
+    "avg": 166.67,
+    "min": 166.67,
+    "max": 166.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 166.67,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 50,
+        "mængde": "300g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologisk grødris økologisk": {
+    "avg": 30.72,
+    "min": 30.72,
+    "max": 30.72,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 30.72,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 15.36,
+        "mængde": "500g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologisk pizzadej økologisk": {
+    "avg": 34.82,
+    "min": 34.82,
+    "max": 34.82,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 34.82,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 9.75,
+        "mængde": "280g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologiske bønner økologisk": {
+    "avg": 19.84,
+    "min": 19.84,
+    "max": 19.84,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 19.84,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 5,
+        "mængde": "242-252g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologiske stenfri grønne druer økologisk": {
+    "avg": 30,
+    "min": 30,
+    "max": 30,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 30,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 15,
+        "mængde": "500g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Hanegal økologisk spegepølse økologisk": {
+    "avg": 257.14,
+    "min": 257.14,
+    "max": 257.14,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 257.14,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 18,
+        "mængde": "70g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Dansk rødkål konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Beauvais Herregårdsrødkål konventionel": {
+    "avg": 16.67,
+    "min": 16.67,
+    "max": 16.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 16.67,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 12,
+        "mængde": "720g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Bistronne kyllingeburger konventionel": {
+    "avg": 33.33,
+    "min": 33.33,
+    "max": 33.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 33.33,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 10,
+        "mængde": "300g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Premieur fuldkornsburgerboller konventionel": {
+    "avg": 60.61,
+    "min": 60.61,
+    "max": 60.61,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 60.61,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 20,
+        "mængde": "330g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "ØGO økologisk ekstra jomfruolivenolie økologisk": {
+    "avg": 49,
+    "min": 49,
+    "max": 49,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 49,
+    "historik": [
+      {
+        "butik": "Netto",
+        "pris": 49,
+        "mængde": "500ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Klovborg skiveost konventionel": {
+    "avg": 14,
+    "min": 14,
+    "max": 14,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 14,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "1 pakke",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "BKI formalet kaffe konventionel": {
+    "avg": 100,
+    "min": 100,
+    "max": 100,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 100,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 40,
+        "mængde": "300-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Faxe Kondi eller Pepsi Max konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "150 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Tulip bacon eller Den Grønne Slagter kalkunbacon konventionel": {
+    "avg": 96,
+    "min": 96,
+    "max": 96,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 96,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "100-125 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Hakket gris 14-18% konventionel": {
+    "avg": 50,
+    "min": 50,
+    "max": 50,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 50,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Mørbrad af gris konventionel": {
+    "avg": 67.89,
+    "min": 67.89,
+    "max": 67.89,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 67.89,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 129,
+        "mængde": "1500-1900 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Grisekæber konventionel": {
+    "avg": 49,
+    "min": 49,
+    "max": 49,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 49,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 49,
+        "mængde": "1 pakke",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Änglamark flæskesteg økologisk": {
+    "avg": 24.5,
+    "min": 24.5,
+    "max": 24.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 24.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 49,
+        "mængde": "Pr. 1/2 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Burger Boost eller Burger Boost smoky twist konventionel": {
+    "avg": 111.43,
+    "min": 111.43,
+    "max": 111.43,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 111.43,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 39,
+        "mængde": "300-350 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Hakket oksekød med 35% grønt konventionel": {
+    "avg": 87.5,
+    "min": 87.5,
+    "max": 87.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 87.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 35,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Frijsenborg hel kylling konventionel": {
+    "avg": 51.11,
+    "min": 51.11,
+    "max": 51.11,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 51.11,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 69,
+        "mængde": "1350 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Glyngøre fiske- eller laksefars konventionel": {
+    "avg": 80,
+    "min": 80,
+    "max": 80,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 80,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 32,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop Kyllingebryst med lage konventionel": {
+    "avg": 68.75,
+    "min": 68.75,
+    "max": 68.75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 68.75,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 55,
+        "mængde": "800 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kyllingebryst med BBQ eller hakket kylling 3-6% konventionel": {
+    "avg": 72.5,
+    "min": 72.5,
+    "max": 72.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 72.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 29,
+        "mængde": "375-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Blåbær konventionel": {
+    "avg": 102.66,
+    "min": 93.33,
+    "max": 112,
+    "unit": "kg",
+    "count": 2,
+    "totalPris": 205.32999999999998,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 28,
+        "mængde": "250 g",
+        "dato": "2025-11-01"
+      },
+      {
+        "butik": "Bilka",
+        "pris": 28,
+        "mængde": "300 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Änglamark Økologiske kartofler økologisk": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "1 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Store Alexander Lucas pærer konventionel": {
+    "avg": 22,
+    "min": 22,
+    "max": 22,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 22,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 22,
+        "mængde": "Bakke med 6 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Änglamark økologisk dansk spidskål økologisk": {
+    "avg": 14,
+    "min": 14,
+    "max": 14,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 14,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Mango konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Lammefjordsgulerødder konventionel": {
+    "avg": 14,
+    "min": 14,
+    "max": 14,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 14,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "1 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Danonino eller Actimel konventionel": {
+    "avg": 25,
+    "min": 25,
+    "max": 25,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 25,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "300-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Premier multipak is konventionel": {
+    "avg": 25,
+    "min": 25,
+    "max": 25,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 25,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "300-445 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Graasten Sønderjyske Fristelser pålægssalater konventionel": {
+    "avg": 85.71,
+    "min": 85.71,
+    "max": 85.71,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 85.71,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "140 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Irma varmrøget, gravad eller koldrøget laks konventionel": {
+    "avg": 280,
+    "min": 280,
+    "max": 280,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 280,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 35,
+        "mængde": "125 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop Asia cubes eller dumplings konventionel": {
+    "avg": 57.14,
+    "min": 57.14,
+    "max": 57.14,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 57.14,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "320-350 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Langelænder pølser konventionel": {
+    "avg": 62.86,
+    "min": 62.86,
+    "max": 62.86,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 62.86,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 22,
+        "mængde": "325-350 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "K-Salat remoulade eller mayonnaise konventionel": {
+    "avg": 15,
+    "min": 15,
+    "max": 15,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 15,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Lillebror ostehaps eller Fløde havarti konventionel": {
+    "avg": 72.5,
+    "min": 72.5,
+    "max": 72.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 72.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 29,
+        "mængde": "324-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "OTA Solgryn eller Branflakes konventionel": {
+    "avg": 14.29,
+    "min": 14.29,
+    "max": 14.29,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 14.29,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "375-700 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Cocio eller Starbucks konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "220-1000 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Yoggi yoghurt konventionel": {
+    "avg": 14,
+    "min": 14,
+    "max": 14,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 14,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "1 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Klovborg skæreost eller Castello aged havarti konventionel": {
+    "avg": 122.5,
+    "min": 122.5,
+    "max": 122.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 122.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 49,
+        "mængde": "Min. 400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Karolines Køkken risalamande konventionel": {
+    "avg": 43.33,
+    "min": 33.33,
+    "max": 53.33,
+    "unit": "kg",
+    "count": 2,
+    "totalPris": 86.66,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "450 g",
+        "dato": "2025-11-01"
+      },
+      {
+        "butik": "365 discount",
+        "pris": 8,
+        "mængde": "150 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Det Gode fra Schulstad konventionel": {
+    "avg": 15.79,
+    "min": 15.79,
+    "max": 15.79,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 15.79,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "500-950 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "365 økologisk ingefærshot økologisk": {
+    "avg": 17.46,
+    "min": 17.46,
+    "max": 17.46,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 17.46,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 17.46,
+        "mængde": "50 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "365 økologisk bær mix økologisk": {
+    "avg": 55.82,
+    "min": 55.82,
+    "max": 55.82,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 55.82,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12.56,
+        "mængde": "225 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Änglamark økologisk leverpostej økologisk": {
+    "avg": 48.8,
+    "min": 48.8,
+    "max": 48.8,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 48.8,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 9.76,
+        "mængde": "200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "365 økologisk fusilli eller fuldkornsskruer økologisk": {
+    "avg": 16.6,
+    "min": 16.6,
+    "max": 16.6,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 16.6,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 8.3,
+        "mængde": "500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Pålæg (God Smag) konventionel": {
+    "avg": 125,
+    "min": 125,
+    "max": 125,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 125,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "80 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Cheasy skyr konventionel": {
+    "avg": 22,
+    "min": 22,
+    "max": 22,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 22,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 22,
+        "mængde": "1 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop grøntsager konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "200-1000 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop brød konventionel": {
+    "avg": 18.67,
+    "min": 18.67,
+    "max": 18.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 18.67,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "270-750 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Mou okse eller hønsekødssuppe konventionel": {
+    "avg": 19,
+    "min": 19,
+    "max": 19,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 19,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 19,
+        "mængde": "1000 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Torpedo, butterflyrejer eller panerede rejer konventionel": {
+    "avg": 90.91,
+    "min": 90.91,
+    "max": 90.91,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 90.91,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "150-220 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Vildlaks konventionel": {
+    "avg": 75,
+    "min": 75,
+    "max": 75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 75,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Big Americans pizza konventionel": {
+    "avg": 54.95,
+    "min": 54.95,
+    "max": 54.95,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 54.95,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "385-455 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Carte D'or Les Classiques eller Coop pints is konventionel": {
+    "avg": 25,
+    "min": 25,
+    "max": 25,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 25,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "450-750 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Perfect Season færdigretter konventionel": {
+    "avg": 91.43,
+    "min": 91.43,
+    "max": 91.43,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 91.43,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 32,
+        "mængde": "350 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Knorr saucer eller bouillon konventionel": {
+    "avg": 100,
+    "min": 100,
+    "max": 100,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 100,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "57-100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Karolines supper konventionel": {
+    "avg": 22,
+    "min": 22,
+    "max": 22,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 22,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 22,
+        "mængde": "1000 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop kartofler konventionel": {
+    "avg": 15,
+    "min": 15,
+    "max": 15,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 15,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "750-1000 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Irma færdigretter konventionel": {
+    "avg": 111.43,
+    "min": 111.43,
+    "max": 111.43,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 111.43,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 39,
+        "mængde": "350 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop proteinshake konventionel": {
+    "avg": 30,
+    "min": 30,
+    "max": 30,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 30,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Luftig skyr eller skyr med smag konventionel": {
+    "avg": 47.06,
+    "min": 47.06,
+    "max": 47.06,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 47.06,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 8,
+        "mængde": "125-170 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Arla laktosefri piskefløde konventionel": {
+    "avg": 14,
+    "min": 14,
+    "max": 14,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 14,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "250 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop Grana Padano konventionel": {
+    "avg": 166.67,
+    "min": 166.67,
+    "max": 166.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 166.67,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "150 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Arla laktosefri mini- eller letmælk konventionel": {
+    "avg": 15,
+    "min": 15,
+    "max": 15,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 15,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "1 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop glutenfri pasta konventionel": {
+    "avg": 37.5,
+    "min": 37.5,
+    "max": 37.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 37.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "250-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Nestle glutenfri morgenmad konventionel": {
+    "avg": 77.33,
+    "min": 77.33,
+    "max": 77.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 77.33,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 29,
+        "mængde": "375 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Irma knækbrød (glutenfri) konventionel": {
+    "avg": 131.58,
+    "min": 131.58,
+    "max": 131.58,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 131.58,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "190 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Glutenfrit brød (Balviten) konventionel": {
+    "avg": 96.15,
+    "min": 96.15,
+    "max": 96.15,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 96.15,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "140-260 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Karen Volf glutenfri julekager konventionel": {
+    "avg": 109.09,
+    "min": 109.09,
+    "max": 109.09,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 109.09,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 18,
+        "mængde": "165 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Nordthy tun eller Sæby makrel konventionel": {
+    "avg": 54.05,
+    "min": 54.05,
+    "max": 54.05,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 54.05,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "125-185 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Nissin Demae Ramen nudler konventionel": {
+    "avg": 80,
+    "min": 80,
+    "max": 80,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 80,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 8,
+        "mængde": "100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Mutti hakkede tomater konventionel": {
+    "avg": 30,
+    "min": 30,
+    "max": 30,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 30,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Pickwick eller Fredsted te konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "16-20 breve",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Dolmio pastasaucer konventionel": {
+    "avg": 44.44,
+    "min": 44.44,
+    "max": 44.44,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 44.44,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "440-450 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Classico eller Delicato Monini olivenolie konventionel": {
+    "avg": 70,
+    "min": 70,
+    "max": 70,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 70,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 70,
+        "mængde": "500 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Amo kageblanding konventionel": {
+    "avg": 28.57,
+    "min": 28.57,
+    "max": 28.57,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 28.57,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "525-700 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop mandler konventionel": {
+    "avg": 97.5,
+    "min": 97.5,
+    "max": 97.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 97.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 39,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Haribo slikposer konventionel": {
+    "avg": 100,
+    "min": 100,
+    "max": 100,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 100,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "120 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Skælskør marmelade konventionel": {
+    "avg": 56.6,
+    "min": 56.6,
+    "max": 56.6,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 56.6,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "265 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "KiMs chips eller nødder konventionel": {
+    "avg": 82.35,
+    "min": 82.35,
+    "max": 82.35,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 82.35,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "100-170 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kettle cooked chips konventionel": {
+    "avg": 66.67,
+    "min": 66.67,
+    "max": 66.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 66.67,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "150 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Carletti Haps poser konventionel": {
+    "avg": 117.65,
+    "min": 117.65,
+    "max": 117.65,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 117.65,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "170 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Corny Big konventionel": {
+    "avg": 120,
+    "min": 120,
+    "max": 120,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 120,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 6,
+        "mængde": "40-50 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Cloetta bars, Fazer 2-pak bars eller Lindor sticks konventionel": {
+    "avg": 179.49,
+    "min": 179.49,
+    "max": 179.49,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 179.49,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "38-78 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Pick-Up! 4-pak eller mini konventionel": {
+    "avg": 178.57,
+    "min": 178.57,
+    "max": 178.57,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 178.57,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "106-112 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "After Eight eller Lindt Excellence konventionel": {
+    "avg": 175,
+    "min": 175,
+    "max": 175,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 175,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 35,
+        "mængde": "100-200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Cloetta juleskum konventionel": {
+    "avg": 150,
+    "min": 150,
+    "max": 150,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 150,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Toms slikpose konventionel": {
+    "avg": 101.33,
+    "min": 101.33,
+    "max": 101.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 101.33,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 38,
+        "mængde": "375 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Bakkegårdens julekager konventionel": {
+    "avg": 30,
+    "min": 30,
+    "max": 30,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 30,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "275-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Skanderborg julebryg konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "50 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Nørrebro Bryghus, Sol, To Øl Brokilde eller Implosion konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "33 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coca-Cola 24-pak konventionel": {
+    "avg": 99,
+    "min": 99,
+    "max": 99,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 99,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 99,
+        "mængde": "24 x 33 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Frugtbrus eller Tørst konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "85-100 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Blandet saft eller Rigtig Lemonade konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "85-100 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Humlesovs eller Willemoes konventionel": {
+    "avg": 15,
+    "min": 15,
+    "max": 15,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 15,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "44-50 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Carlsberg eller Tuborg konventionel": {
+    "avg": 109,
+    "min": 109,
+    "max": 109,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 109,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 109,
+        "mængde": "18-20 x 33 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Brøndums Snaps, Grant's Whisky eller Bacardi Rom konventionel": {
+    "avg": 105,
+    "min": 105,
+    "max": 105,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 105,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 105,
+        "mængde": "70 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "1664, Breezer eller Somersby konventionel": {
+    "avg": 13,
+    "min": 13,
+    "max": 13,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 13,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 13,
+        "mængde": "27.5-33 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Faxe Kondi Booster konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "50 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Manor Lodge eller Craft i boks konventionel": {
+    "avg": 99,
+    "min": 99,
+    "max": 99,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 99,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 99,
+        "mængde": "3 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Hardys Stamp konventionel": {
+    "avg": 39,
+    "min": 39,
+    "max": 39,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 39,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 39,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Las Hermanas, Alfredo Primitivo eller Hoffman Sauvignon Blanc konventionel": {
+    "avg": 45,
+    "min": 45,
+    "max": 45,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 45,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 45,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Why? Because I'm Not Like The Others eller Prosecco konventionel": {
+    "avg": 55,
+    "min": 55,
+    "max": 55,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 55,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 55,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Falasco Ripasso eller Exhib' Rosé konventionel": {
+    "avg": 65,
+    "min": 65,
+    "max": 65,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 65,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 65,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Stellenhof eller Le arche Veronese konventionel": {
+    "avg": 219,
+    "min": 219,
+    "max": 219,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 219,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 219,
+        "mængde": "6 flasker",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Ribbenssteg eller nakkefilet af dansk gris konventionel": {
+    "avg": 36.33,
+    "min": 36.33,
+    "max": 36.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 36.33,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 109,
+        "mængde": "1,8-3 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Dava danske frilandsæg konventionel": {
+    "avg": 22,
+    "min": 22,
+    "max": 22,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 22,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 22,
+        "mængde": "10 stk.",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Heineken, Royal Classic eller Pilsner alkoholfri øl konventionel": {
+    "avg": 45,
+    "min": 45,
+    "max": 45,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 45,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 45,
+        "mængde": "6x33 cl ds.",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Øl- eller sodavandsmarked (Royal Export, Heineken, Pepsi Max, Faxe Kondi) konventionel": {
+    "avg": 135,
+    "min": 135,
+    "max": 135,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 135,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 135,
+        "mængde": "18x33 cl ds / 24x33 cl ds",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Mulard and (frossen) konventionel": {
+    "avg": 53.3,
+    "min": 53.3,
+    "max": 53.3,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 53.3,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 149.25,
+        "mængde": "2800 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Fritgående berberie and (frossen) konventionel": {
+    "avg": 76.88,
+    "min": 76.88,
+    "max": 76.88,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 76.88,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 276.75,
+        "mængde": "3600 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Landand (frossen) konventionel": {
+    "avg": 34.75,
+    "min": 34.75,
+    "max": 34.75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 34.75,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 104.25,
+        "mængde": "3000 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Fritgående peking and (frossen) konventionel": {
+    "avg": 47.95,
+    "min": 47.95,
+    "max": 47.95,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 47.95,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 134.25,
+        "mængde": "2800 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Landand andebryststeg (frossen) konventionel": {
+    "avg": 74.46,
+    "min": 74.46,
+    "max": 74.46,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 74.46,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 104.25,
+        "mængde": "1400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Berberieandelår (frossen) konventionel": {
+    "avg": 83.57,
+    "min": 83.57,
+    "max": 83.57,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 83.57,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 29.25,
+        "mængde": "350 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Andebryst (frossen) konventionel": {
+    "avg": 93.55,
+    "min": 93.55,
+    "max": 93.55,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 93.55,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 18.71,
+        "mængde": "160-200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Frilands berberieand (frossen) konventionel": {
+    "avg": 74.87,
+    "min": 74.87,
+    "max": 74.87,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 74.87,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 239.57,
+        "mængde": "2800-3200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kalkun (frossen) konventionel": {
+    "avg": 50.78,
+    "min": 50.78,
+    "max": 50.78,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 50.78,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 243.75,
+        "mængde": "4800 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Peking and (frossen) konventionel": {
+    "avg": 31.44,
+    "min": 31.44,
+    "max": 31.44,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 31.44,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 81.75,
+        "mængde": "2600 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling XXL kyllingespyd (Neutral eller teriyaki) konventionel": {
+    "avg": 35.8,
+    "min": 35.8,
+    "max": 35.8,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 35.8,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 179,
+        "mængde": "2,5 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling XXL kyllingebrystfilet eller -inderfilet konventionel": {
+    "avg": 29.83,
+    "min": 29.83,
+    "max": 29.83,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 29.83,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 179,
+        "mængde": "2,6 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Frost kyllingemarked (Salling) konventionel": {
+    "avg": 49,
+    "min": 49,
+    "max": 49,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 49,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 49,
+        "mængde": "2 poser",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Udbenede kyllingeoverlår konventionel": {
+    "avg": 22.25,
+    "min": 22.25,
+    "max": 22.25,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 22.25,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 89,
+        "mængde": "1,4 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Matilde kakaoskummetmælk konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "1 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Princip Ananas konventionel": {
+    "avg": 25,
+    "min": 25,
+    "max": 25,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 25,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 25,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Medister eller hakket grise-/kalvekød af dansk gris konventionel": {
+    "avg": 13.17,
+    "min": 13.17,
+    "max": 13.17,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 13.17,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 79,
+        "mængde": "1,4-1,6 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Knorr dinner kit konventionel": {
+    "avg": 62.31,
+    "min": 62.31,
+    "max": 62.31,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 62.31,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "136-321 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Dansk hakket kylling (3-7% fedt) konventionel": {
+    "avg": 39,
+    "min": 39,
+    "max": 39,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 39,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 39,
+        "mængde": "1 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Pizza konventionel": {
+    "avg": 39,
+    "min": 39,
+    "max": 39,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 39,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 39,
+        "mængde": "7 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "AMA fedtstof konventionel": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "200-500 g/500 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Flødekartofler konventionel": {
+    "avg": 39,
+    "min": 39,
+    "max": 39,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 39,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 39,
+        "mængde": "3 pakker",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Il Capolavoro Appassimento konventionel": {
+    "avg": 219,
+    "min": 219,
+    "max": 219,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 219,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 219,
+        "mængde": "6 flasker",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Star, Uno Grande eller Golden Zin Bag-in-Box konventionel": {
+    "avg": 99,
+    "min": 99,
+    "max": 99,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 99,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 99,
+        "mængde": "2,25-3 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Blomberg's Originale Glögg konventionel": {
+    "avg": 50,
+    "min": 50,
+    "max": 50,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 50,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 50,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Princip Gourmet Rødvins Gløgg konventionel": {
+    "avg": 69,
+    "min": 69,
+    "max": 69,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 69,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 69,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Princip Alkoholfri Æblegløgg konventionel": {
+    "avg": 50,
+    "min": 50,
+    "max": 50,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 50,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 50,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Monster eller Faxe Kondi Booster konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "50 cl ds",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "God Morgen ØKO juice økologisk": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "450-850 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "God Morgen juice, nektar eller shot konventionel": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "450-850 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Tuborg Classic, Grøn Tuborg eller Carlsberg Pilsner konventionel": {
+    "avg": 105,
+    "min": 105,
+    "max": 105,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 105,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 105,
+        "mængde": "30x33 cl fl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Fun eller Scoop saftevand konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 12,
+        "mængde": "50 cl fl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Haribo slikpose konventionel": {
+    "avg": 77.33,
+    "min": 77.33,
+    "max": 77.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 77.33,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 29,
+        "mængde": "220-375 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kiks eller kagemarked konventionel": {
+    "avg": 46.15,
+    "min": 46.15,
+    "max": 46.15,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 46.15,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 12,
+        "mængde": "80-260 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling nøddeserie konventionel": {
+    "avg": 62.5,
+    "min": 62.5,
+    "max": 62.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 62.5,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 25,
+        "mængde": "300-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Cookies Rainbow konventionel": {
+    "avg": 53.33,
+    "min": 53.33,
+    "max": 53.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 53.33,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 12,
+        "mængde": "225 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Peter Larsen Kaffe, Gevalia eller Café Noir konventionel": {
+    "avg": 287.5,
+    "min": 287.5,
+    "max": 287.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 287.5,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 69,
+        "mængde": "240 g / 400-500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Peter Larsen Kaffe Økologisk Fairtrade Hele Bønner økologisk": {
+    "avg": 172.5,
+    "min": 172.5,
+    "max": 172.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 172.5,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 69,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "To-go marked (Klar, Happy Yoghurt, Mentos, Fruit-tella) konventionel": {
+    "avg": 33.33,
+    "min": 33.33,
+    "max": 33.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 33.33,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 5,
+        "mængde": "27-150 g/180-250 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Mokaï, Shaker eller Smirnoff Ice konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "27,5 cl fl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Nutramino PWO shots konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "60 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Økologisk grød smoothie økologisk": {
+    "avg": 83.33,
+    "min": 83.33,
+    "max": 83.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 83.33,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "120 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Baguettes konventionel": {
+    "avg": 13.33,
+    "min": 13.33,
+    "max": 13.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 13.33,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "255-750 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Pagen gifler konventionel": {
+    "avg": 66.67,
+    "min": 66.67,
+    "max": 66.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 66.67,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "250-300 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "K-Salat pålægssalat konventionel": {
+    "avg": 100,
+    "min": 100,
+    "max": 100,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 100,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 15,
+        "mængde": "100-150 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Bakkedal smørbar original konventionel": {
+    "avg": 75,
+    "min": 75,
+    "max": 75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 75,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 15,
+        "mængde": "200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Sunshine Delights tørret frugt konventionel": {
+    "avg": 200,
+    "min": 200,
+    "max": 200,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 200,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Slik- eller chokoladejulekalender (Baron) konventionel": {
+    "avg": 250,
+    "min": 250,
+    "max": 250,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 250,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 50,
+        "mængde": "85-200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Slik- eller chokoladejulekalender (Kinder) konventionel": {
+    "avg": 292.04,
+    "min": 292.04,
+    "max": 292.04,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 292.04,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 99,
+        "mængde": "149-339 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Pukka økologisk te julekalender økologisk": {
+    "avg": 99,
+    "min": 99,
+    "max": 99,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 99,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 99,
+        "mængde": "24 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Slik- eller chokoladejulekalender (Haribo, Marabou) konventionel": {
+    "avg": 396.67,
+    "min": 396.67,
+    "max": 396.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 396.67,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 119,
+        "mængde": "190-300 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Slik- eller chokoladejulekalender (Skipper's Pipes, Hershey's) konventionel": {
+    "avg": 285.4,
+    "min": 285.4,
+    "max": 285.4,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 285.4,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 129,
+        "mængde": "205-452 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Nutella julekalender konventionel": {
+    "avg": 642.05,
+    "min": 642.05,
+    "max": 642.05,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 642.05,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 339,
+        "mængde": "528 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Nørregade eller Spangsberg julekalender konventionel": {
+    "avg": 399,
+    "min": 399,
+    "max": 399,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 399,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 399,
+        "mængde": "599-1000 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Halloween-vaffel (Softice i sort vaffel) konventionel": {
+    "avg": 25,
+    "min": 25,
+    "max": 25,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 25,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 25,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Pumpkin Spice Iskaffe konventionel": {
+    "avg": 25,
+    "min": 25,
+    "max": 25,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 25,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 25,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Klassisk julefrokost (Mad ud af huset) konventionel": {
+    "avg": 118,
+    "min": 118,
+    "max": 118,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 118,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 118,
+        "mængde": "pr. kuvert",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Stor julefrokost (Mad ud af huset) konventionel": {
+    "avg": 158,
+    "min": 158,
+    "max": 158,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 158,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 158,
+        "mængde": "pr. kuvert",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Moderne julefrokost (Mad ud af huset) konventionel": {
+    "avg": 158,
+    "min": 158,
+    "max": 158,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 158,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 158,
+        "mængde": "pr. kuvert",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Moderne julefrokost (vegetarisk) konventionel": {
+    "avg": 158,
+    "min": 158,
+    "max": 158,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 158,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 158,
+        "mængde": "pr. kuvert",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Luksus julefrokost (Mad ud af huset) konventionel": {
+    "avg": 198,
+    "min": 198,
+    "max": 198,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 198,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 198,
+        "mængde": "pr. kuvert",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Traditionel andemenu (Mad ud af huset) konventionel": {
+    "avg": 95,
+    "min": 95,
+    "max": 95,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 95,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 95,
+        "mængde": "pr. kuvert",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Moderne andemenu (Mad ud af huset) konventionel": {
+    "avg": 115,
+    "min": 115,
+    "max": 115,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 115,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 115,
+        "mængde": "pr. kuvert",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Hel andemenu (Mad ud af huset) konventionel": {
+    "avg": 495,
+    "min": 495,
+    "max": 495,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 495,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 495,
+        "mængde": "pr. menu",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Sodavand (Pepsi Max) konventionel": {
+    "avg": 18,
+    "min": 18,
+    "max": 18,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 18,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 18,
+        "mængde": "1,5 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Halloween sliders konventionel": {
+    "avg": 89,
+    "min": 89,
+    "max": 89,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 89,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 89,
+        "mængde": "Bakke med 6 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Spøgelsespandekager konventionel": {
+    "avg": 57.14,
+    "min": 57.14,
+    "max": 57.14,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 57.14,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "350 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Halloween nuggets konventionel": {
+    "avg": 33.33,
+    "min": 33.33,
+    "max": 33.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 33.33,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "600 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Rana Halloween græskarravioli konventionel": {
+    "avg": 100,
+    "min": 100,
+    "max": 100,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 100,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 25,
+        "mængde": "250 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Halloweenvaffel (Quickfood) konventionel": {
+    "avg": 25,
+    "min": 25,
+    "max": 25,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 25,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 25,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Filet mignon af oksetyksteg eller roastbeef af okseinderlår konventionel": {
+    "avg": 129,
+    "min": 129,
+    "max": 129,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 129,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 129,
+        "mængde": "800-1000 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Protein kebab med oksekød konventionel": {
+    "avg": 126.67,
+    "min": 126.67,
+    "max": 126.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 126.67,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 38,
+        "mængde": "300 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Entrecotes eller rib eyes konventionel": {
+    "avg": 198.46,
+    "min": 198.46,
+    "max": 198.46,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 198.46,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 129,
+        "mængde": "600-650 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Stegeben af dansk gris konventionel": {
+    "avg": 15.8,
+    "min": 15.8,
+    "max": 15.8,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 15.8,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 79,
+        "mængde": "2,2-2,5 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Ludvig Okseculotte konventionel": {
+    "avg": 44.98,
+    "min": 44.98,
+    "max": 44.98,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 44.98,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 89.95,
+        "mængde": "pr. 1/2 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Hakket oksekød (4-7% fedt) konventionel": {
+    "avg": 121.11,
+    "min": 121.11,
+    "max": 121.11,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 121.11,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 109,
+        "mængde": "900 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Delikatessens børneplatte konventionel": {
+    "avg": 49,
+    "min": 49,
+    "max": 49,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 49,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 49,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Sliders (Delikatesse) konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 12,
+        "mængde": "pr. stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Nu Færdigret konventionel": {
+    "avg": 75,
+    "min": 75,
+    "max": 75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 75,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 30,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kæmpeposen kylling konventionel": {
+    "avg": 13.8,
+    "min": 13.8,
+    "max": 13.8,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 13.8,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 69,
+        "mængde": "1-2,5 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Frokostmarked (fisk) konventionel": {
+    "avg": 64.71,
+    "min": 64.71,
+    "max": 64.71,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 64.71,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 22,
+        "mængde": "90-340 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Grønlandske rejer, kold- eller varmrøget laks konventionel": {
+    "avg": 130,
+    "min": 130,
+    "max": 130,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 130,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 39,
+        "mængde": "180-300 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Fiske- eller skaldyrsmarked (dybfrost) konventionel": {
+    "avg": 49,
+    "min": 49,
+    "max": 49,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 49,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 49,
+        "mængde": "2 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Princip Halehængt laks, sockeye vildlaks, koldrøget laks eller ørred konventionel": {
+    "avg": 258,
+    "min": 258,
+    "max": 258,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 258,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 129,
+        "mængde": "450-500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Rødspættefilet konventionel": {
+    "avg": 199.5,
+    "min": 199.5,
+    "max": 199.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 199.5,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 19.95,
+        "mængde": "pr. 100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Laksefilet konventionel": {
+    "avg": 149.5,
+    "min": 149.5,
+    "max": 149.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 149.5,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 14.95,
+        "mængde": "pr. 100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Tunloin (optøet) konventionel": {
+    "avg": 399.5,
+    "min": 399.5,
+    "max": 399.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 399.5,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 39.95,
+        "mængde": "pr. 100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Torskefilet konventionel": {
+    "avg": 199.5,
+    "min": 199.5,
+    "max": 199.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 199.5,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 19.95,
+        "mængde": "pr. 100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Lykkeliga danske lammefjordskartofler konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "1 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Cherry blommetomater konventionel": {
+    "avg": 50,
+    "min": 50,
+    "max": 50,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 50,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Økologisk dansk Crown Prince græskar økologisk": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "pr. stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Bagerens klassiske julesmåkager (Chokoladespecier, pebernødder, brunkager, vaniljekranse) konventionel": {
+    "avg": 49,
+    "min": 49,
+    "max": 49,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 49,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 49,
+        "mængde": "2 poser",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Bager / Princip Bagerens brød konventionel": {
+    "avg": 49,
+    "min": 49,
+    "max": 49,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 49,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 49,
+        "mængde": "2 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Norsk klejne eller berliner konventionel": {
+    "avg": 35,
+    "min": 35,
+    "max": 35,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 35,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 35,
+        "mængde": "4 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Bagerens 'Mindre spild' (Knækbrød, ymerdrys, rasp) konventionel": {
+    "avg": 49,
+    "min": 49,
+    "max": 49,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 49,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 49,
+        "mængde": "2 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kiks- eller kagemarked (Pagen Vanillas, McVitie's) konventionel": {
+    "avg": 32,
+    "min": 32,
+    "max": 32,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 32,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 16,
+        "mængde": "125-500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Pick up! 4-pak konventionel": {
+    "avg": 157.14,
+    "min": 157.14,
+    "max": 157.14,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 157.14,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 22,
+        "mængde": "112-140 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Sigdal knækbrød eller Salling chokolade stænger konventionel": {
+    "avg": 93.62,
+    "min": 93.62,
+    "max": 93.62,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 93.62,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 22,
+        "mængde": "150-235 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Philadelphia flødeost konventionel": {
+    "avg": 90,
+    "min": 90,
+    "max": 90,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 90,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 18,
+        "mængde": "145-200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "H.C. Andersen skæreost 45+ mellemlagret konventionel": {
+    "avg": 85.23,
+    "min": 85.23,
+    "max": 85.23,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 85.23,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 75,
+        "mængde": "720-880 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Fritvalgsmarked pålæg (3-Stjernet, Tulip) konventionel": {
+    "avg": 69,
+    "min": 69,
+    "max": 69,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 69,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 69,
+        "mængde": "6 pakker",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Skyr (Blåbær, mango/passion, vanilje) konventionel": {
+    "avg": 30,
+    "min": 30,
+    "max": 30,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 30,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 15,
+        "mængde": "500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Naturli' plantedrik økologisk": {
+    "avg": 15,
+    "min": 15,
+    "max": 15,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 15,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 15,
+        "mængde": "1 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Tulip postej konventionel": {
+    "avg": 30,
+    "min": 30,
+    "max": 30,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 30,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 30,
+        "mængde": "2 pakker",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Kernerigt rugbrød eller engelsk muffins konventionel": {
+    "avg": 20.87,
+    "min": 20.87,
+    "max": 20.87,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 20.87,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 12,
+        "mængde": "335-575 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Lakridskugler konventionel": {
+    "avg": 173.91,
+    "min": 173.91,
+    "max": 173.91,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 173.91,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "110-115 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Kartofler (dybfrost) konventionel": {
+    "avg": 16.67,
+    "min": 16.67,
+    "max": 16.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 16.67,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 15,
+        "mængde": "500-900 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Drikkeyoghurt (Jordbær, Skovbær) konventionel": {
+    "avg": 24,
+    "min": 24,
+    "max": 24,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 24,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 6,
+        "mængde": "250 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling tortilla wraps konventionel": {
+    "avg": 27.03,
+    "min": 27.03,
+    "max": 27.03,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 27.03,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "370 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Premier Is iskasse, isbæger eller Underground iskasse konventionel": {
+    "avg": 29,
+    "min": 29,
+    "max": 29,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 29,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 29,
+        "mængde": "300-750 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Dr. Oetker Ristorante pizza 2-pak konventionel": {
+    "avg": 59.15,
+    "min": 59.15,
+    "max": 59.15,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 59.15,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 42,
+        "mængde": "640-710 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kettle Cooked chips konventionel": {
+    "avg": 80,
+    "min": 80,
+    "max": 80,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 80,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 12,
+        "mængde": "150 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Al'Fez, Blue Dragon, Go-Tan eller Patak's konventionel": {
+    "avg": 55.56,
+    "min": 55.56,
+    "max": 55.56,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 55.56,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 25,
+        "mængde": "45-450 g/150-500 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Samyang instant nudler, Vifon eller Nissin kopnudler konventionel": {
+    "avg": 124.14,
+    "min": 124.14,
+    "max": 124.14,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 124.14,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 18,
+        "mængde": "60-145 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Earth Control nødder konventionel": {
+    "avg": 112.5,
+    "min": 112.5,
+    "max": 112.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 112.5,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 45,
+        "mængde": "225-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Good Gut juicy eller smoothie konventionel": {
+    "avg": 22,
+    "min": 22,
+    "max": 22,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 22,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 22,
+        "mængde": "750 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Arla Cultura yoghurt konventionel": {
+    "avg": 26.67,
+    "min": 26.67,
+    "max": 26.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 26.67,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 12,
+        "mængde": "450 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Arla Cultura syrnet mælkedrik konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 12,
+        "mængde": "330 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Good Gut shots (6-pak) konventionel": {
+    "avg": 15,
+    "min": 15,
+    "max": 15,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 15,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 15,
+        "mængde": "6 x 100 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Good Gut shot konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "100 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Baristo Edition Mocca, Espresso eller Organic kaffe konventionel": {
+    "avg": 165.56,
+    "min": 165.56,
+    "max": 165.56,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 165.56,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 149,
+        "mængde": "900 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Baristo Edition Organic kaffe økologisk": {
+    "avg": 165.56,
+    "min": 165.56,
+    "max": 165.56,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 165.56,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 149,
+        "mængde": "900 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Arla LactoFREE Laktosefri Barista mælk drik 3,5% konventionel": {
+    "avg": 19.95,
+    "min": 19.95,
+    "max": 19.95,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 19.95,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 19.95,
+        "mængde": "1 Liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Merrild eller Lavazza formalet kaffe konventionel": {
+    "avg": 130,
+    "min": 130,
+    "max": 130,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 130,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 65,
+        "mængde": "340-500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Amanda, Glyngøre, Bornholms eller Munkebo fiskekonserves konventionel": {
+    "avg": 58.18,
+    "min": 58.18,
+    "max": 58.18,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 58.18,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 16,
+        "mængde": "63-275 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Pickwick, Lipton eller Fredsted tebreve konventionel": {
+    "avg": 13,
+    "min": 13,
+    "max": 13,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 13,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 13,
+        "mængde": "15-25 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Heinz tomat ketchup, Graasten remoulade eller mayonnaise konventionel": {
+    "avg": 39.13,
+    "min": 39.13,
+    "max": 39.13,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 39.13,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 18,
+        "mængde": "375-460 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Merrild, Peter Larsen Kaffe eller L'OR (kaffe) konventionel": {
+    "avg": 395,
+    "min": 395,
+    "max": 395,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 395,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 79,
+        "mængde": "200 g / 30 stk / 400-500g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Tørfoder (kat) konventionel": {
+    "avg": 13.5,
+    "min": 13.5,
+    "max": 13.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 13.5,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 135,
+        "mængde": "10 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Toms eller Anthon Berg mini chokoladeæske konventionel": {
+    "avg": 250,
+    "min": 250,
+    "max": 250,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 250,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 30,
+        "mængde": "95-120 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "KitKat eller Crunch plade konventionel": {
+    "avg": 200,
+    "min": 200,
+    "max": 200,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 200,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "99-100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Marianne bolsjer eller Dumle konventionel": {
+    "avg": 166.67,
+    "min": 166.67,
+    "max": 166.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 166.67,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "100-120 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Halloween spand (slik) konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Toms æske eller guldkarameller konventionel": {
+    "avg": 200,
+    "min": 200,
+    "max": 200,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 200,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "62-100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Galle & Jessen pålægschokolade konventionel": {
+    "avg": 194.44,
+    "min": 194.44,
+    "max": 194.44,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 194.44,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 42,
+        "mængde": "216 g/54 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Nutella konventionel": {
+    "avg": 65,
+    "min": 65,
+    "max": 65,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 65,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 65,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Carletti skum, Evers bolsjer konventionel": {
+    "avg": 142.86,
+    "min": 142.86,
+    "max": 142.86,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 142.86,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 10,
+        "mængde": "60-70 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Spiritusmarked (Fisk shots, Glitter Fisk, J&B Scotch, Koskenkorva vodka, Nordsø Bitter, Nørregade shots) konventionel": {
+    "avg": 89,
+    "min": 89,
+    "max": 89,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 89,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 89,
+        "mængde": "70 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Spiritusmarked (Braastad Cognac, Cucullo Rom, Italicus, Jameson Crested, Puntacana Muy Viejo, Wild Turkey Bourbon, The Botanist Gin, Tanqueray No. 10) konventionel": {
+    "avg": 209,
+    "min": 209,
+    "max": 209,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 209,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 209,
+        "mængde": "70 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Spiritusmarked (Caol Ila 12Y0, Cragganmore 12Y0, Dalwhinnie 15Y0, Johnnie Walker Green Label, Le Tribute gin, Patrón tequila, Puntacana Tesoro rom, Underberg 30-pack) konventionel": {
+    "avg": 299,
+    "min": 299,
+    "max": 299,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 299,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 299,
+        "mængde": "30x2 cl eller 70 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Blomberg's Glögg (8.5% vol) konventionel": {
+    "avg": 49.95,
+    "min": 49.95,
+    "max": 49.95,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 49.95,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 49.95,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Salling Luksus Hvidvins Gløgg konventionel": {
+    "avg": 50,
+    "min": 50,
+    "max": 50,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 50,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 50,
+        "mængde": "750 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Princip Luksus Rødvins Gløgg konventionel": {
+    "avg": 69,
+    "min": 69,
+    "max": 69,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 69,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 69,
+        "mængde": "750 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Rynkeby 16-serien juice eller Naturig drik konventionel": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 20,
+        "mængde": "1 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Rynkeby shot eller økologisk bland selv drik konventionel": {
+    "avg": 26,
+    "min": 26,
+    "max": 26,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 26,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 26,
+        "mængde": "50 cl fl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Rynkeby økologisk bland selv drik økologisk": {
+    "avg": 26,
+    "min": 26,
+    "max": 26,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 26,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 26,
+        "mængde": "50 cl fl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Red Bull konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 2,
+    "totalPris": 24,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 12,
+        "mængde": "25 cl ds",
+        "dato": "2025-11-01"
+      },
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "25 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Grimbergen, Jacobsen eller Kronenbourg øl konventionel": {
+    "avg": 26,
+    "min": 26,
+    "max": 26,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 26,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 26,
+        "mængde": "75 cl fl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coca-Cola sodavand (Regular eller zero) konventionel": {
+    "avg": 66,
+    "min": 66,
+    "max": 66,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 66,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 66,
+        "mængde": "18x25 cl fl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Rocca Alata Valpolicella Ripasso konventionel": {
+    "avg": 59,
+    "min": 59,
+    "max": 59,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 59,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 59,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Antonin Rodet eller Borgo al Pascolo Chianti konventionel": {
+    "avg": 50,
+    "min": 50,
+    "max": 50,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 50,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 50,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Calvet Cremant eller Vouvray konventionel": {
+    "avg": 75,
+    "min": 75,
+    "max": 75,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 75,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 75,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Muga Reserva eller San Felice Campogiovanni Brunello konventionel": {
+    "avg": 175,
+    "min": 175,
+    "max": 175,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 175,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 175,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Mucho Mas konventionel": {
+    "avg": 269,
+    "min": 269,
+    "max": 269,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 269,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 269,
+        "mængde": "6 flasker",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kingpin Bag-in-Box konventionel": {
+    "avg": 89,
+    "min": 89,
+    "max": 89,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 89,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 89,
+        "mængde": "2,25 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Spiritusmarked (Antica Formula Vermouth, Borghetti Espresso, Carpano Vermouth, Fernet Branca, Villa Massa Ameretto, Tequila Rosé Strawberry, Tanqueray Gin) konventionel": {
+    "avg": 139,
+    "min": 139,
+    "max": 139,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 139,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 139,
+        "mængde": "37-75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Elektrolyt marked (Purepower, Bodylab, High5) konventionel": {
+    "avg": 29,
+    "min": 29,
+    "max": 29,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 29,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 29,
+        "mængde": "20 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "HUSK kosttilskud eller mælkesyrebakterier konventionel": {
+    "avg": 242.22,
+    "min": 242.22,
+    "max": 242.22,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 242.22,
+    "historik": [
+      {
+        "butik": "Bilka",
+        "pris": 109,
+        "mængde": "150-450 g/225 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Gustav landand konventionel": {
+    "avg": 24.58,
+    "min": 24.58,
+    "max": 24.58,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 24.58,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 59,
+        "mængde": "2400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coca-Cola, Fanta konventionel": {
+    "avg": 69,
+    "min": 69,
+    "max": 69,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 69,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 69,
+        "mængde": "24 x 33 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Stryhn's leverpostej konventionel": {
+    "avg": 45,
+    "min": 45,
+    "max": 45,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 45,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 18,
+        "mængde": "275-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Taffel chips konventionel": {
+    "avg": 51.43,
+    "min": 51.43,
+    "max": 51.43,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 51.43,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 9,
+        "mængde": "110-175 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Jensens Køkken saucer konventionel": {
+    "avg": 14,
+    "min": 14,
+    "max": 14,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 14,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "250-350 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Andebryst (Dybfrost) konventionel": {
+    "avg": 95,
+    "min": 95,
+    "max": 95,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 95,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 19,
+        "mængde": "160-200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Andelår (Dybfrost) konventionel": {
+    "avg": 68.18,
+    "min": 68.18,
+    "max": 68.18,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 68.18,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "180-220 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Julius bryststeg konventionel": {
+    "avg": 92,
+    "min": 92,
+    "max": 92,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 92,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 69,
+        "mængde": "750 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Gustav landand (Dybfrost) konventionel": {
+    "avg": 43.44,
+    "min": 43.44,
+    "max": 43.44,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 43.44,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 139,
+        "mængde": "3200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Danske Vildmosekartofler konventionel": {
+    "avg": 2.4,
+    "min": 2.4,
+    "max": 2.4,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 2.4,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "1,5 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Fynbo kirsebærsauce konventionel": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "365 rødkål eller rødbeder konventionel": {
+    "avg": 11.76,
+    "min": 11.76,
+    "max": 11.76,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 11.76,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 8,
+        "mængde": "350-680 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Pad thai, panang karry eller taco strimler konventionel": {
+    "avg": 72.5,
+    "min": 72.5,
+    "max": 72.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 72.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 29,
+        "mængde": "300-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Ovnklar flæskesteg konventionel": {
+    "avg": 39.6,
+    "min": 39.6,
+    "max": 39.6,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 39.6,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 99,
+        "mængde": "2000-2500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Hakket grise- og kalvekød 4-7% eller 8-12% konventionel": {
+    "avg": 70,
+    "min": 70,
+    "max": 70,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 70,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 35,
+        "mængde": "400-500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Egnsgårde kalve entrecote eller ribeye konventionel": {
+    "avg": 245,
+    "min": 245,
+    "max": 245,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 245,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 49,
+        "mængde": "200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Hakket oksekød 4-7% konventionel": {
+    "avg": 127.14,
+    "min": 127.14,
+    "max": 127.14,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 127.14,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 89,
+        "mængde": "700 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop Kyllingeover- eller underlår konventionel": {
+    "avg": 43.75,
+    "min": 43.75,
+    "max": 43.75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 43.75,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 35,
+        "mængde": "700-800 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Danske Egnsgårde nakkekoteletter eller stegeflæsk i skiver konventionel": {
+    "avg": 87.5,
+    "min": 87.5,
+    "max": 87.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 87.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 35,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Hel Holger kylling eller koteletter konventionel": {
+    "avg": 36.88,
+    "min": 36.88,
+    "max": 36.88,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 36.88,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 59,
+        "mængde": "800-1600 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Røget hamburgerryg konventionel": {
+    "avg": 68.46,
+    "min": 68.46,
+    "max": 68.46,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 68.46,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 89,
+        "mængde": "1300 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop Kyllingebryst eller inderfilet konventionel": {
+    "avg": 75,
+    "min": 75,
+    "max": 75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 75,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 45,
+        "mængde": "600 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Røget, gravad eller varmrøget laks konventionel": {
+    "avg": 129.41,
+    "min": 129.41,
+    "max": 129.41,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 129.41,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 22,
+        "mængde": "100-170 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Rahbek indbagt fisk (Dybfrost) konventionel": {
+    "avg": 60,
+    "min": 60,
+    "max": 60,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 60,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "250 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Glyngøre sprødbagt sejfilet med eller uden spinat og feta konventionel": {
+    "avg": 120,
+    "min": 120,
+    "max": 120,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 120,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 39,
+        "mængde": "250-325 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kaptajnens fangst rejer konventionel": {
+    "avg": 195,
+    "min": 195,
+    "max": 195,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 195,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 39,
+        "mængde": "200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Glyngøre fersk laksefilet konventionel": {
+    "avg": 187.5,
+    "min": 187.5,
+    "max": 187.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 187.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 75,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Änglamark økologiske danske gulerødder økologisk": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "1 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Änglamark økologiske danske brune champignoner økologisk": {
+    "avg": 80,
+    "min": 80,
+    "max": 80,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 80,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 16,
+        "mængde": "200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Danske æbler konventionel": {
+    "avg": 3.6,
+    "min": 3.6,
+    "max": 3.6,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 3.6,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 18,
+        "mængde": "1,5 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Klementiner konventionel": {
+    "avg": 16,
+    "min": 16,
+    "max": 16,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 16,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "750 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Stor bakke blåbær konventionel": {
+    "avg": 112.5,
+    "min": 112.5,
+    "max": 112.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 112.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 45,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Cultura økologisk A38 økologisk": {
+    "avg": 13.96,
+    "min": 13.96,
+    "max": 13.96,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 13.96,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 13.96,
+        "mængde": "1 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "365 økologiske fuldkornsboller med birkes (Dybfrost) økologisk": {
+    "avg": 33.24,
+    "min": 33.24,
+    "max": 33.24,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 33.24,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 13.96,
+        "mængde": "420 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Thise økologisk vesterhavsost økologisk": {
+    "avg": 195.82,
+    "min": 195.82,
+    "max": 195.82,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 195.82,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 44.06,
+        "mængde": "Min. 225 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "365 økologiske drikke (koncentreret) økologisk": {
+    "avg": 10.46,
+    "min": 10.46,
+    "max": 10.46,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10.46,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10.46,
+        "mængde": "50 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Anthon Berg marcipanbrød konventionel": {
+    "avg": 125,
+    "min": 125,
+    "max": 125,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 125,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 5,
+        "mængde": "33-40 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop revet mozzarella eller cheddar konventionel": {
+    "avg": 60,
+    "min": 60,
+    "max": 60,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 60,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "150-200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Den Grønne Slagter pålæg konventionel": {
+    "avg": 120,
+    "min": 120,
+    "max": 120,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 120,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "70-100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "The Flag vin konventionel": {
+    "avg": 79,
+    "min": 79,
+    "max": 79,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 79,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 79,
+        "mængde": "3 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Cheasy yoghurt konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "1 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Unusual surdejspizza konventionel": {
+    "avg": 62.5,
+    "min": 62.5,
+    "max": 62.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 62.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Cirkel Kaffe Formalet konventionel": {
+    "avg": 98,
+    "min": 98,
+    "max": 98,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 98,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 49,
+        "mængde": "500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Cirkel Kaffe Formalet (Økologisk) økologisk": {
+    "avg": 98,
+    "min": 98,
+    "max": 98,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 98,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 49,
+        "mængde": "500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Dejli' Dansk skæreost konventionel": {
+    "avg": 73.02,
+    "min": 73.02,
+    "max": 73.02,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 73.02,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 69,
+        "mængde": "Min. 945 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop færdigretter (Dybfrost) konventionel": {
+    "avg": 37.5,
+    "min": 37.5,
+    "max": 37.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 37.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "300-400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop mini- eller middagsfrikadeller (Dybfrost) konventionel": {
+    "avg": 56.25,
+    "min": 56.25,
+    "max": 56.25,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 56.25,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 27,
+        "mængde": "450-480 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Mars, snickers isbarer, Coop eller 365 is (Dybfrost) konventionel": {
+    "avg": 32,
+    "min": 32,
+    "max": 32,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 32,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 32,
+        "mængde": "245-900 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "365 økologisk is (Dybfrost) økologisk": {
+    "avg": 32,
+    "min": 32,
+    "max": 32,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 32,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 32,
+        "mængde": "245-900 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "365 økologiske grøntsager (Dybfrost) økologisk": {
+    "avg": 26.67,
+    "min": 26.67,
+    "max": 26.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 26.67,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "300-450 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Mou nemme supper (Dybfrost) konventionel": {
+    "avg": 31.25,
+    "min": 31.25,
+    "max": 31.25,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 31.25,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "700-800 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Elvira tun eller makrel i tomat konventionel": {
+    "avg": 68.97,
+    "min": 68.97,
+    "max": 68.97,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 68.97,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "125-145 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "K-Salat pålægssalater konventionel": {
+    "avg": 80,
+    "min": 80,
+    "max": 80,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 80,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "100-150 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kohberg brød konventionel": {
+    "avg": 25,
+    "min": 25,
+    "max": 25,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 25,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "380-600 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Steff Houlberg toppings konventionel": {
+    "avg": 80,
+    "min": 80,
+    "max": 80,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 80,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 16,
+        "mængde": "175-200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop skiveost konventionel": {
+    "avg": 83.33,
+    "min": 83.33,
+    "max": 83.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 83.33,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "200-300 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop bacon konventionel": {
+    "avg": 83.33,
+    "min": 83.33,
+    "max": 83.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 83.33,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "300 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Becel flydende eller OMA stege/bage konventionel": {
+    "avg": 24,
+    "min": 24,
+    "max": 24,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 24,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "500 ml/500 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Naturli' økologisk smøre'åst, block eller smørbar økologisk": {
+    "avg": 75,
+    "min": 75,
+    "max": 75,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 75,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "150-200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Änglamark økologisk plantedrik økologisk": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "1 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Innocent juice eller Kids smoothie konventionel": {
+    "avg": 24,
+    "min": 24,
+    "max": 24,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 24,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 24,
+        "mængde": "900 ml / 4x150 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Kolios græsk yoghurt konventionel": {
+    "avg": 29,
+    "min": 29,
+    "max": 29,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 29,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 29,
+        "mængde": "1 kg",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop kakao mælkedrik eller iskaffe konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "1000 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Buko smøreoste konventionel": {
+    "avg": 70,
+    "min": 70,
+    "max": 70,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 70,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop Grana Padano, Président spidsbrie eller Coop rød cheddar blok konventionel": {
+    "avg": 100,
+    "min": 100,
+    "max": 100,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 100,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "150-250 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop Gouda med chili, Creamy Gouda eller Port Salut konventionel": {
+    "avg": 110,
+    "min": 110,
+    "max": 110,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 110,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 22,
+        "mængde": "150-200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Amoretti aperitivo konventionel": {
+    "avg": 285.71,
+    "min": 285.71,
+    "max": 285.71,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 285.71,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 40,
+        "mængde": "140 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Président Emmentaler eller Prima Donna konventionel": {
+    "avg": 180,
+    "min": 180,
+    "max": 180,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 180,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 45,
+        "mængde": "220-250 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop pesto konventionel": {
+    "avg": 52.63,
+    "min": 52.63,
+    "max": 52.63,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 52.63,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "190 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Irma oliven konventionel": {
+    "avg": 142.86,
+    "min": 142.86,
+    "max": 142.86,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 142.86,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "70 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Bruschetta (Krambals) konventionel": {
+    "avg": 142.86,
+    "min": 142.86,
+    "max": 142.86,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 142.86,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "70 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Højer økologisk spegepølse økologisk": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "1 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Italiensk produceret pålæg (Citterio) konventionel": {
+    "avg": 171.43,
+    "min": 171.43,
+    "max": 171.43,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 171.43,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "50-70 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Viña Flora Pink Moscato konventionel": {
+    "avg": 29,
+    "min": 29,
+    "max": 29,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 29,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 29,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Indomita vin konventionel": {
+    "avg": 33,
+    "min": 33,
+    "max": 33,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 33,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 33,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Yellow Tail alkoholfri vin konventionel": {
+    "avg": 45,
+    "min": 45,
+    "max": 45,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 45,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 45,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Hans Baer Riesling eller Rosé alkoholfri konventionel": {
+    "avg": 39,
+    "min": 39,
+    "max": 39,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 39,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 39,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Faustino 1 eller Barolo fra Roberto Sarotto konventionel": {
+    "avg": 99,
+    "min": 99,
+    "max": 99,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 99,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 99,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Faustino VII vin konventionel": {
+    "avg": 39,
+    "min": 39,
+    "max": 39,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 39,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 39,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "100% Grenache, 100% Chardonnay eller Castel del Lago Pinot Grigio konventionel": {
+    "avg": 55,
+    "min": 55,
+    "max": 55,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 55,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 55,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Guigal Côtes du Rhône konventionel": {
+    "avg": 79,
+    "min": 79,
+    "max": 79,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 79,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 79,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "KungFu Girl Riesling konventionel": {
+    "avg": 99,
+    "min": 99,
+    "max": 99,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 99,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 99,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Burmester 10 Year Old Tawny Portvin konventionel": {
+    "avg": 99,
+    "min": 99,
+    "max": 99,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 99,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 99,
+        "mængde": "75 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop piskefløde konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "250 ml",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop speciel mel eller brødblandinger konventionel": {
+    "avg": 11,
+    "min": 11,
+    "max": 11,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 11,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 11,
+        "mængde": "500-1000 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop hakket kylling 7-10% konventionel": {
+    "avg": 64.44,
+    "min": 64.44,
+    "max": 64.44,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 64.44,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 29,
+        "mængde": "450 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Coop italiana pizza (Dybfrost) konventionel": {
+    "avg": 53.66,
+    "min": 53.66,
+    "max": 53.66,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 53.66,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 22,
+        "mængde": "300-410 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Earth Control tørret frugt konventionel": {
+    "avg": 72.73,
+    "min": 72.73,
+    "max": 72.73,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 72.73,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "200-275 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Wasa knækbrød konventionel": {
+    "avg": 72.73,
+    "min": 72.73,
+    "max": 72.73,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 72.73,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "200-275 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Bornholmerkiksen, Tuc eller ostekiks konventionel": {
+    "avg": 66.67,
+    "min": 66.67,
+    "max": 66.67,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 66.67,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "175-300 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Knorr retter konventionel": {
+    "avg": 68.54,
+    "min": 68.54,
+    "max": 68.54,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 68.54,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 22,
+        "mængde": "203-321 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Caputo pizzamel konventionel": {
+    "avg": 20,
+    "min": 20,
+    "max": 20,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 20,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "1000 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Black Coffee - Søren Le Smidt edition hele bønner kaffe konventionel": {
+    "avg": 172.5,
+    "min": 172.5,
+    "max": 172.5,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 172.5,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 69,
+        "mængde": "400 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Quaker Crüsli konventionel": {
+    "avg": 55.56,
+    "min": 55.56,
+    "max": 55.56,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 55.56,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "375-450 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Malaco slikposer konventionel": {
+    "avg": 94.12,
+    "min": 94.12,
+    "max": 94.12,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 94.12,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 32,
+        "mængde": "192-340 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Carletti juleskum konventionel": {
+    "avg": 171.43,
+    "min": 171.43,
+    "max": 171.43,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 171.43,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "60-70 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Dan Cake juleromkugler, havregrynskugler, kryddermazarin eller sirupsroulade konventionel": {
+    "avg": 50,
+    "min": 50,
+    "max": 50,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 50,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 15,
+        "mængde": "175-300 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Spangsberg flødeboller Petit konventionel": {
+    "avg": 208.33,
+    "min": 208.33,
+    "max": 208.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 208.33,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 30,
+        "mængde": "144 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Marabou Cookies, Brownie eller Brookie konventionel": {
+    "avg": 108.7,
+    "min": 108.7,
+    "max": 108.7,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 108.7,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "132-184 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Ritter Sport konventionel": {
+    "avg": 180,
+    "min": 180,
+    "max": 180,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 180,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 18,
+        "mængde": "100 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Lotus Biscoff kiks konventionel": {
+    "avg": 80,
+    "min": 80,
+    "max": 80,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 80,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 20,
+        "mængde": "150-250 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Toblerone konventionel": {
+    "avg": 195,
+    "min": 195,
+    "max": 195,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 195,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 39,
+        "mængde": "200 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Corny Müslibars konventionel": {
+    "avg": 208.33,
+    "min": 208.33,
+    "max": 208.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 208.33,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 25,
+        "mængde": "120 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Taffel nødder eller Øffer flæskesvær konventionel": {
+    "avg": 93.33,
+    "min": 93.33,
+    "max": 93.33,
+    "unit": "kg",
+    "count": 1,
+    "totalPris": 93.33,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 14,
+        "mængde": "75-150 g",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Heineken eller Royal øl konventionel": {
+    "avg": 79,
+    "min": 79,
+    "max": 79,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 79,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 79,
+        "mængde": "18-20 x 33 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Xtra saft konventionel": {
+    "avg": 7,
+    "min": 7,
+    "max": 7,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 7,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 7,
+        "mængde": "1 liter",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Harboe sodavand konventionel": {
+    "avg": 3,
+    "min": 3,
+    "max": 3,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 3,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 3,
+        "mængde": "50 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Schiøtz øl konventionel": {
+    "avg": 11,
+    "min": 11,
+    "max": 11,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 11,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 11,
+        "mængde": "44 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Svaneke, Thisted eller Thy øl konventionel": {
+    "avg": 18,
+    "min": 18,
+    "max": 18,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 18,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 18,
+        "mængde": "50 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Thy Økologisk Jule Bock økologisk": {
+    "avg": 18,
+    "min": 18,
+    "max": 18,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 18,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 18,
+        "mængde": "50 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Thy Økologisk Jule Ale økologisk": {
+    "avg": 18,
+    "min": 18,
+    "max": 18,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 18,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 18,
+        "mængde": "50 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "State eller Powerade konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "40-50 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Mokai, Shaker eller Smirnoff konventionel": {
+    "avg": 12,
+    "min": 12,
+    "max": 12,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 12,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 12,
+        "mængde": "27,5 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Tuborg øl konventionel": {
+    "avg": 38,
+    "min": 38,
+    "max": 38,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 38,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 38,
+        "mængde": "6 x 33 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Tuborg Classic Økologisk økologisk": {
+    "avg": 38,
+    "min": 38,
+    "max": 38,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 38,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 38,
+        "mængde": "6 x 33 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Jolly sodavand konventionel": {
+    "avg": 10,
+    "min": 10,
+    "max": 10,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 10,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 10,
+        "mængde": "150 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Flügel, Cuba eller Poliakov Vodka konventionel": {
+    "avg": 85,
+    "min": 85,
+    "max": 85,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 85,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 85,
+        "mængde": "10x2 cl / 70 cl",
+        "dato": "2025-11-01"
+      }
+    ]
+  },
+  "Livol vitaminer eller Futura mineraler konventionel": {
+    "avg": 55,
+    "min": 55,
+    "max": 55,
+    "unit": "stk",
+    "count": 1,
+    "totalPris": 55,
+    "historik": [
+      {
+        "butik": "365 discount",
+        "pris": 55,
+        "mængde": "90-225 stk",
+        "dato": "2025-11-01"
+      }
+    ]
+  }
+}
