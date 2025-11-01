@@ -13,7 +13,7 @@
     
     <meta name="theme-color" content="#4CAF50">
 
-    <style>
+<style>
         /* --- 1. Grundlæggende Styling --- */
         :root {
             --primær-farve: #4CAF50; /* Grøn */
@@ -26,14 +26,14 @@
             --knap-aktiv: #45a049;
         }
 
-        /* --- NYT: Splash Skærm --- */
+        /* --- Splash Skærm --- */
         #splash-screen {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: var(--primær-farve); /* Bruger din grønne farve */
+            background-color: var(--primær-farve); 
             color: var(--hvid);
             display: flex;
             flex-direction: column;
@@ -56,7 +56,6 @@
             font-size: 1.2rem;
             font-weight: 300;
         }
-        /* Skjul splash skærm */
         #splash-screen.hidden {
             opacity: 0;
             pointer-events: none;
@@ -84,50 +83,108 @@
         /* --- 2. App Container --- */
         #app-container {
             width: 100%;
-            max-width: 600px; /* Mobil-bredde */
+            max-width: 600px; 
             height: 100%;
             background-color: var(--hvid);
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
-            overflow: hidden; /* Forhindrer scroll på hele appen */
+            overflow: hidden; 
         }
 
+        /* OPDATERET: Header med Flexbox og Menu-positionering */
         header {
             background-color: var(--primær-farve);
             color: var(--hvid);
             padding: 1.2rem 1rem;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; /* Vigtig for menu-placering */
         }
 
-        /* RETTET: Stile til din nye Logo-header */
         .logo-h1 {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0;
+            margin: 0; 
             font-size: 1.5rem;
+            flex-grow: 1; /* Sørger for at den centrerer */
+            /* Flyt lidt til venstre for at kompensere for knappen */
+            padding-left: 40px; 
         }
         .logo-svg {
-            width: 30px; /* Juster størrelse efter behov */
+            width: 30px; 
             height: 30px;
             margin-right: 0.5rem;
         }
+        
+        /* --- NYT: Header Menu Styling --- */
+        #menu-toggle-btn {
+            background: none;
+            border: none;
+            color: var(--hvid);
+            font-size: 2rem;
+            line-height: 1;
+            cursor: pointer;
+            width: 40px; /* Fast bredde */
+            padding: 0;
+            position: absolute; /* Placeres i højre side */
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .menu-dropdown {
+            display: none; /* Skjult som standard */
+            position: absolute;
+            top: 100%; /* Lige under headeren */
+            right: 1rem;
+            background-color: var(--hvid);
+            border: 1px solid var(--grænse-farve);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            min-width: 200px;
+        }
+        
+        .menu-dropdown.show {
+            display: block; /* Vises når aktiv */
+        }
+        
+        .menu-dropdown button {
+            display: block;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: none;
+            border: none;
+            border-bottom: 1px solid var(--grænse-farve);
+            color: var(--tekst-farve);
+            text-align: left;
+            cursor: pointer;
+        }
+        .menu-dropdown button:last-child {
+            border-bottom: none;
+        }
+        .menu-dropdown button:hover {
+            background-color: var(--lys-grå);
+        }
 
         main {
-            flex-grow: 1; /* Fylder resten af højDEN */
-            overflow-y: auto; /* Tillader scroll KUN på main-indholdet */
+            flex-grow: 1; 
+            overflow-y: auto; 
             padding: 1rem;
-            padding-bottom: 80px; /* Plads til bundmenuen */
+            padding-bottom: 80px; 
         }
 
         /* --- 3. Skærm-styring (Tabs) --- */
         .app-skærm {
-            display: none; /* Skjult som standard */
+            display: none; 
         }
 
         .app-skærm.active {
-            display: block; /* Vises når aktiv */
+            display: block; 
         }
 
         /* --- 4. Bund-navigation --- */
@@ -135,7 +192,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            max-width: 600px; /* Matcher container */
+            max-width: 600px; 
             display: flex;
             background-color: var(--hvid);
             border-top: 1px solid var(--grænse-farve);
@@ -398,12 +455,11 @@
             padding: 1rem 0.5rem;
             border-bottom: 1px solid var(--grænse-farve);
             cursor: pointer;
-            user-select: none; /* Forhindrer tekst-markering ved klik */
+            user-select: none; 
             display: flex;
             align-items: center;
         }
         
-        /* Simpel "checkbox" effekt */
         .indkøbs-item::before {
             content: '☐';
             display: inline-block;
@@ -427,7 +483,7 @@
             background-color: var(--advarsel-farve);
         }
         .btn-advarsel:hover {
-            background-color: #B71C1C; /* Mørkere rød */
+            background-color: #B71C1C; 
         }
     </style>
 </head>
@@ -435,7 +491,7 @@
 
     <div id="splash-screen">
         <h1 class="splash-title">KøkkenKlog</h1>
-        <img src="./Logo.png" alt="KøkkenKlog Logo" class="splash-logo">
+        <img src="logo.png" alt="KøkkenKlog Logo" class="splash-logo">
         <p class="splash-subtitle">Din Madplan gjort nemt</p>
     </div>
 
@@ -443,13 +499,22 @@
 
         <header>
             <h1 class="logo-h1"> 
-                <img src="./Logo.png" alt="KøkkenKlog Logo" class="logo-svg">
+                <img src="logo.png" alt="KøkkenKlog Logo" class="logo-svg">
                 <span>KøkkenKlog</span>
             </h1>
+            
+            <button id="menu-toggle-btn">&#8942;</button>
+
+            <div id="header-menu" class="menu-dropdown">
+                <button id="btn-backup-setup">Backup Setup Data</button>
+                <button id="btn-restore-setup">Hent Setup Backup</button>
+            </div>
         </header>
 
-        <main>
+        <input type="file" id="restore-file-input" accept=".json" style="display: none;">
 
+
+        <main>
             <section id="setup" class="app-skærm active">
                 
                 <h2>1. Målgruppe & Varighed</h2>
@@ -492,6 +557,7 @@
                         <label for="check-rema">Rema 1000</label>
                         <a href="https://shop.rema1000.dk/avis/" target="_blank" rel="noopener" class="btn-lille-link">Åbn avis</a>
                     </div>
+
                     <div class="tilbuds-linje">
                         <input type="checkbox" id="check-coop365" data-butik="Coop 365">
                         <label for="check-coop365">Coop 365</label>
@@ -537,46 +603,32 @@
                     <button id="btn-slet-data" class="btn btn-advarsel">Slet Gemt Madplan</button>
                 </div>
             </section>
-
+            
             <section id="madplan" class="app-skærm">
                 <h2 id="uge-titel">Uge 1</h2>
-                
-                <ul class="uge-oversigt">
-                    </ul>
-
+                <ul class="uge-oversigt"></ul>
                 <button id="btn-næste-uge">Næste Uge</button>
                 <button id="btn-forrige-uge">Forrige Uge</button>
-
             </section>
-
             <section id="opskrift" class="app-skærm">
                 <div id="opskrift-container">
                     <button class="btn-tilbage" id="btn-tilbage-til-uge">&larr; Tilbage til ugeplan</button>
-                    
                     <h2 id="opskrift-titel">Opskrift Titel</h2>
-
                     <h3>Ingredienser</h3>
-                    <ul id="opskrift-ingredienser">
-                        </ul>
-
+                    <ul id="opskrift-ingredienser"></ul>
                     <h3>Fremgangsmåde</h3>
-                    <ol id="opskrift-fremgangsmåde">
-                        </ol>
+                    <ol id="opskrift-fremgangsmåde"></ol>
                 </div>
             </section>
-
             <section id="indkøb" class="app-skærm">
                 <h2 id="indkøbsliste-titel">Indkøbsliste (Uge 1)</h2>
-                
                 <div id="sortering-knapper">
                     <button data-sort="navn" class="active">A-Å</button>
                     <button data-sort="kategori">Kategori</button>
                     <button data-sort="dag">Dag</button>
                     <button data-sort="butik">Butik</button>
                 </div>
-                
-                <ul id="indkøbsliste">
-                    </ul>
+                <ul id="indkøbsliste"></ul>
             </section>
 
         </main>
@@ -646,7 +698,7 @@
             const inputVoksneAlder = document.getElementById('input-voksne-alder');
             const inputBoernAntal = document.getElementById('input-boern-antal');
             const inputBoernAlder = document.getElementById('input-boern-alder');
-            const inputAllergi = document.getElementById('input-allergi');
+            const inputAllergi = document.getElementById('input-allergi'); 
 
             // Referencer til tjekbokse
             const checkNetto = document.getElementById('check-netto');
@@ -655,10 +707,17 @@
             const checkCoop365 = document.getElementById('check-coop365');
             const checkCoop365Ugeavis = document.getElementById('check-coop365-ugeavis');
             const checkBilka = document.getElementById('check-bilka');
+            
+            // NYT: Referencer til Header Menu
+            const menuToggleBtn = document.getElementById('menu-toggle-btn');
+            const headerMenu = document.getElementById('header-menu');
+            const btnBackupSetup = document.getElementById('btn-backup-setup');
+            const btnRestoreSetup = document.getElementById('btn-restore-setup');
+            const restoreFileInput = document.getElementById('restore-file-input');
 
 
             // ===================================================
-            // NYT: SETUP DATA (LOCALSTORAGE)
+            // SETUP DATA (LOCALSTORAGE, BACKUP & RESTORE)
             // ===================================================
 
             // Saml alle de felter, der skal gemmes
@@ -668,10 +727,10 @@
             ];
 
             /**
-             * Gemmer indholdet af alle setup-felter til localStorage
+             * Henter data fra felterne og returnerer et objekt
              */
-            function gemSetupData() {
-                const setupData = {
+            function hentSetupDataFraFelter() {
+                return {
                     voksneAntal: inputVoksneAntal.value,
                     voksneAlder: inputVoksneAlder.value,
                     boernAntal: inputBoernAntal.value,
@@ -682,36 +741,110 @@
                     tilbud: inputTilbud.value,
                     basis: inputBasis.value
                 };
-                localStorage.setItem('minMadplanSetup', JSON.stringify(setupData));
-                console.log("Setup data gemt.");
             }
 
             /**
-             * Indlæser gemte setup-data og udfylder felterne
+             * Udfylder felterne baseret på et data-objekt
              */
-            function indlæsSetupData() {
+            function populateSetupFields(setupData) {
+                if (!setupData) return;
+                
+                inputVoksneAntal.value = setupData.voksneAntal || '2';
+                inputVoksneAlder.value = setupData.voksneAlder || '45, 47';
+                inputBoernAntal.value = setupData.boernAntal || '2';
+                inputBoernAlder.value = setupData.boernAlder || '14, 17';
+                inputUger.value = setupData.uger || '1';
+                inputAllergi.value = setupData.allergi || '';
+                inputLager.value = setupData.lager || '';
+                inputTilbud.value = setupData.tilbud || '';
+                inputBasis.value = setupData.basis || '';
+            }
+
+            /**
+             * Gemmer indholdet af alle setup-felter til localStorage
+             */
+            function gemSetupDataTilLocalStorage() {
+                const setupData = hentSetupDataFraFelter();
+                localStorage.setItem('minMadplanSetup', JSON.stringify(setupData));
+                console.log("Setup data gemt i localStorage.");
+            }
+
+            /**
+             * Indlæser gemte setup-data fra localStorage og udfylder felterne
+             */
+            function indlæsSetupDataFraLocalStorage() {
                 const gemtData = localStorage.getItem('minMadplanSetup');
                 if (gemtData) {
                     const setupData = JSON.parse(gemtData);
-                    // Brug || til at sætte en default-værdi, hvis feltet er tomt
-                    inputVoksneAntal.value = setupData.voksneAntal || '2';
-                    inputVoksneAlder.value = setupData.voksneAlder || '45, 47';
-                    inputBoernAntal.value = setupData.boernAntal || '2';
-                    inputBoernAlder.value = setupData.boernAlder || '14, 17';
-                    inputUger.value = setupData.uger || '1';
-                    inputAllergi.value = setupData.allergi || '';
-                    inputLager.value = setupData.lager || '';
-                    inputTilbud.value = setupData.tilbud || '';
-                    inputBasis.value = setupData.basis || '';
-                    console.log("Setup data indlæst.");
+                    populateSetupFields(setupData);
+                    console.log("Setup data indlæst fra localStorage.");
                 }
             }
 
-            // Tilføj event listeners til at gemme automatisk, hver gang brugeren taster
+            // Gem automatisk, hver gang brugeren taster
             setupInputFelter.forEach(felt => {
-                if (felt) { // Tjek at feltet findes
-                    felt.addEventListener('input', gemSetupData);
+                if (felt) { 
+                    felt.addEventListener('input', gemSetupDataTilLocalStorage);
                 }
+            });
+            
+            // --- NYT: Backup-funktion ---
+            function backupSetupData() {
+                const setupData = hentSetupDataFraFelter();
+                const jsonStreng = JSON.stringify(setupData, null, 2); // 'null, 2' gør filen pæn
+                const blob = new Blob([jsonStreng], { type: "application/json" });
+                
+                // Lav dato-streng
+                const dato = new Date().toISOString().split('T')[0];
+                const filnavn = `KøkkenKlogBackup_${dato}.json`;
+
+                // Lav et midlertidigt link og klik på det
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = filnavn;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                headerMenu.classList.remove('show');
+                console.log("Setup data backet op.");
+            }
+            
+            // --- NYT: Hent backup-funktion ---
+            function hentSetupData() {
+                // Åbn filvælgeren
+                restoreFileInput.click();
+                headerMenu.classList.remove('show');
+            }
+            
+            // --- NYT: Håndter den valgte backup-fil ---
+            restoreFileInput.addEventListener('change', (event) => {
+                const fil = event.target.files[0];
+                if (!fil) return;
+
+                const læser = new FileReader();
+                
+                læser.onload = (e) => {
+                    try {
+                        const data = JSON.parse(e.target.result);
+                        
+                        // Udfyld felterne med den indlæste data
+                        populateSetupFields(data);
+                        
+                        // Gem den gendannede data til localStorage med det samme
+                        gemSetupDataTilLocalStorage();
+                        
+                        alert("Backup indlæst succesfuldt!");
+                    } catch (error) {
+                        console.error("Fejl ved indlæsning af backup:", error);
+                        alert("Fejl: Kunne ikke indlæse backup-filen. Er det en gyldig JSON-fil?");
+                    }
+                };
+                
+                læser.readAsText(fil);
+                
+                // Nulstil input, så man kan indlæse samme fil igen
+                event.target.value = null;
             });
 
 
@@ -945,26 +1078,29 @@
             }
 
             function genererPrompt() {
-                // 1. Hent alle basis-værdier
-                const antalUger = inputUger.value || 1;
-                const lagerTekst = formaterInputTilPrompt(inputLager.value);
-                const basisTekst = formaterInputTilPrompt(inputBasis.value);
-                const manuelleTilbudTekst = formaterInputTilPrompt(inputTilbud.value);
-                const allergiTekst = formaterInputTilPrompt(inputAllergi.value); // Læser allergi
+                // Hent alle værdier fra det gemte setup
+                const setupData = hentSetupDataFraFelter();
+                
+                // Formater dem til prompten
+                const antalUger = setupData.uger || 1;
+                const lagerTekst = formaterInputTilPrompt(setupData.lager);
+                const basisTekst = formaterInputTilPrompt(setupData.basis);
+                const manuelleTilbudTekst = formaterInputTilPrompt(setupData.tilbud);
+                const allergiTekst = formaterInputTilPrompt(setupData.allergi);
 
-                // 2. Byg "Målgruppe"-sektionen dynamisk
+                // Byg "Målgruppe"-sektionen dynamisk
                 let målgruppeTekst = [];
-                if (inputVoksneAntal.value > 0) {
-                    målgruppeTekst.push(`- Antal voksne: ${inputVoksneAntal.value} (Alder: ${inputVoksneAlder.value || 'ikke specificeret'})`);
+                if (setupData.voksneAntal > 0) {
+                    målgruppeTekst.push(`- Antal voksne: ${setupData.voksneAntal} (Alder: ${setupData.voksneAlder || 'ikke specificeret'})`);
                 }
-                if (inputBoernAntal.value > 0) {
-                    målgruppeTekst.push(`- Antal børn/teenagere: ${inputBoernAntal.value} (Alder: ${inputBoernAlder.value || 'ikke specificeret'})`);
+                if (setupData.boernAntal > 0) {
+                    målgruppeTekst.push(`- Antal børn/teenagere: ${setupData.boernAntal} (Alder: ${setupData.boernAlder || 'ikke specificeret'})`);
                 }
                 målgruppeTekst.push("- VIGTIGT: Planlæg portioner derefter. Aktive teenagere spiser ofte som eller mere end voksne.");
                 const målgruppePrompt = målgruppeTekst.join('\n');
 
 
-                // 3. Byg den dynamiske "Tilbud"-sektion
+                // Byg den dynamiske "Tilbud"-sektion
                 let tilbudsAviser = [];
                 if (checkNetto.checked) {
                     tilbudsAviser.push("den vedhæftede tilbudsavis fra Netto");
@@ -1000,7 +1136,7 @@
                     tilbudSektionTekst = "Der er ingen specifikke tilbud denne uge. Lav en prisfornuftig plan.";
                 }
 
-                // 4. Byg den nye, komplette prompt-skabelon
+                // Byg den nye, komplette prompt-skabelon
                 const promptSkabelon = `
 Generer en komplet madplan for ${antalUger} uger til aftensmad.
 Outputtet skal være udelukkende i JSON-format. Generer kun den rene JSON-kodeblok, uden indledende eller afsluttende tekst.
@@ -1173,6 +1309,10 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
                     localStorage.removeItem('minMadplanData');
                     globalMadplanData = null;
                     console.log("Gemt data slettet.");
+                    
+                    // Nulstil også setup-data
+                    localStorage.removeItem('minMadplanSetup');
+                    
                     location.reload();
                 }
             }
@@ -1195,14 +1335,29 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
                 });
             }
 
+            // NYT: Event listeners til header-menuen
+            menuToggleBtn.addEventListener('click', () => {
+                headerMenu.classList.toggle('show');
+            });
+            
+            // Luk menuen, hvis man klikker udenfor
+            window.addEventListener('click', (event) => {
+                if (!headerMenu.contains(event.target) && !menuToggleBtn.contains(event.target)) {
+                    headerMenu.classList.remove('show');
+                }
+            });
+            
+            btnBackupSetup.addEventListener('click', backupSetupData);
+            btnRestoreSetup.addEventListener('click', hentSetupData);
+
 
             // ===================================================
             // APP INITIALISERING (Start)
             // ===================================================
             
             function startApp() {
-                // NYT: Indlæs setup-data som det første
-                indlæsSetupData();
+                // Indlæs setup-data som det første
+                indlæsSetupDataFraLocalStorage();
 
                 const gemtData = localStorage.getItem('minMadplanData');
                 if (gemtData) {
