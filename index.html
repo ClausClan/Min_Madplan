@@ -880,7 +880,7 @@
                     li.dataset.dagIndex = dagIndex;
                     li.innerHTML = `
                         <h3>${dag.dag}</h3>
-                        <p>${dag.retNavn}</p>
+                        <p>${dag.retNavn || 'Ukendt Ret'}</p> 
                     `;
                     ugeOversigtContainer.appendChild(li);
                 });
@@ -902,22 +902,36 @@
                 const dag = globalMadplanData.uger[ugeIndex].dage[dagIndex];
                 if (!dag) return;
 
-                opskriftTitel.textContent = dag.retNavn;
+                opskriftTitel.textContent = dag.retNavn || 'Opskrift mangler titel';
                 opskriftIngredienser.innerHTML = '';
                 opskriftFremgangsmåde.innerHTML = '';
 
-                dag.ingredienser.forEach(item => {
+                if (Array.isArray(dag.ingredienser)) {
+                    dag.ingredienser.forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = `${item.mængde} ${item.navn}`;
+                        opskriftIngredienser.appendChild(li);
+                    });
+                } else {
+                    console.warn("Ingen ingredienser fundet for:", dag.retNavn);
                     const li = document.createElement('li');
-                    li.textContent = `${item.mængde} ${item.navn}`;
+                    li.textContent = "Ingredienser mangler i data fra AI.";
                     opskriftIngredienser.appendChild(li);
-                });
+                }
 
-                const steps = dag.fremgangsmåde.split(/\d+\.\s/).filter(step => step.trim() !== '');
-                steps.forEach(step => {
+                if (typeof dag.fremgangsmåde === 'string') {
+                    const steps = dag.fremgangsmåde.split(/\d+\.\s/).filter(step => step.trim() !== '');
+                    steps.forEach(step => {
+                        const li = document.createElement('li');
+                        li.textContent = step.trim();
+                        opskriftFremgangsmåde.appendChild(li);
+                    });
+                } else {
+                    console.warn("Ingen fremgangsmåde fundet for:", dag.retNavn);
                     const li = document.createElement('li');
-                    li.textContent = step.trim();
+                    li.textContent = "Fremgangsmåde mangler i data fra AI.";
                     opskriftFremgangsmåde.appendChild(li);
-                });
+                }
             }
 
             function renderIndkøbsliste(ugeIndex) {
@@ -1043,7 +1057,7 @@
             btnIndlæsJson.addEventListener('click', indlæsJSON);
 
 
-// ===================================================
+            // ===================================================
             // FASE 4: PROMPT-GENERERING (OPDATERET)
             // ===================================================
 
@@ -1173,8 +1187,10 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
 2.  'butik': Butiksnavnet, hvis det er et tilbud (f.eks. "Netto", "Rema 1000"), ellers null.
 3.  'dag': Den FØRSTE dag varen skal bruges i ugen (f.eks. "Mandag", "Tirsdag").
 4.  'note': Butiksnavn + "På tilbud" for tilbudsvarer, ellers null.
-5.  'pris': Varens tilbudspris (som et tal, f.eks. 30.00).
+5.  'pris': Varens pris (som et tal, f.eks. 30.00), hvis den fremgår af tilbudsavisen. Ellers null.
 6.  'procentFraGns': (OPDATERET!) Hvis varen er på tilbud OG findes i benchmark-databasen, beregn procentforskellen fra gennemsnitsprisen (avg). Vær SIKKER på at matche 'økologisk'/'konventionel' og 'enhed' (kg/stk) korrekt. Ellers null.
+
+VIGTIGT FOR DAGE: Du SKAL levere en fuld opskrift. 'ingredienser' SKAL være et array af objekter, og 'fremgangsmåde' SKAL være en nummereret streng. BRUG IKKE 'ret' eller 'beskrivelse'. BRUG KUN 'retNavn', 'ingredienser', og 'fremgangsmåde' som vist i eksemplet.
 
 {
   "madplan": {
@@ -1204,7 +1220,18 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
             "procentFraGns": null
           }
         ],
-        "dage": [ ... ]
+        "dage": [
+          {
+            "dag": "Mandag",
+            "retNavn": "Kødsauce med fuldkornspasta",
+            "ingredienser": [
+              { "navn": "Hakket Oksekød Økologisk", "mængde": "500g" },
+              { "navn": "Fuldkornspasta", "mængde": "400g" },
+              { "navn": "Løg", "mængde": "1 stk" }
+            ],
+            "fremgangsmåde": "1. Hak løg og svits det. 2. Tilsæt kød og brun det. 3. Tilsæt flåede tomater og lad det simre. 4. Kog pastaen."
+          }
+        ]
       }
     ]
   }
