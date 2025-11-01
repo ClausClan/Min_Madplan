@@ -663,10 +663,11 @@
             let globalMadplanData = null;
             let nuværendeUgeIndex = 0;
             let nuværendeSortering = 'navn'; 
-            let globalBenchmarkData = null; 
+            let globalBenchmarkData = null; // Til benchmark-data
             
             // --- Globale referencer til skærme og titel ---
             const skærme = document.querySelectorAll('.app-skærm');
+            // appTitel er fjernet, da vi bruger logo-headeren
             const madplanSkærm = document.getElementById('madplan');
             const opskriftSkærm = document.getElementById('opskrift');
             const setupSkærm = document.getElementById('setup');
@@ -721,11 +722,15 @@
             // SETUP DATA (LOCALSTORAGE, BACKUP & RESTORE)
             // ===================================================
 
+            // Saml alle de felter, der skal gemmes
             const setupInputFelter = [
                 inputVoksneAntal, inputVoksneAlder, inputBoernAntal, inputBoernAlder,
                 inputUger, inputAllergi, inputLager, inputTilbud, inputBasis
             ];
 
+            /**
+             * Henter data fra felterne og returnerer et objekt
+             */
             function hentSetupDataFraFelter() {
                 return {
                     voksneAntal: inputVoksneAntal.value,
@@ -740,6 +745,9 @@
                 };
             }
 
+            /**
+             * Udfylder felterne baseret på et data-objekt
+             */
             function populateSetupFields(setupData) {
                 if (!setupData) return;
                 
@@ -754,12 +762,18 @@
                 inputBasis.value = setupData.basis || '';
             }
 
+            /**
+             * Gemmer indholdet af alle setup-felter til localStorage
+             */
             function gemSetupDataTilLocalStorage() {
                 const setupData = hentSetupDataFraFelter();
                 localStorage.setItem('minMadplanSetup', JSON.stringify(setupData));
                 console.log("Setup data gemt i localStorage.");
             }
 
+            /**
+             * Indlæser gemte setup-data fra localStorage og udfylder felterne
+             */
             function indlæsSetupDataFraLocalStorage() {
                 const gemtData = localStorage.getItem('minMadplanSetup');
                 if (gemtData) {
@@ -769,12 +783,16 @@
                 }
             }
 
+            // Gem automatisk, hver gang brugeren taster
             setupInputFelter.forEach(felt => {
                 if (felt) { 
                     felt.addEventListener('input', gemSetupDataTilLocalStorage);
                 }
             });
             
+            /**
+             * Starter download af backup-fil
+             */
             function backupSetupData() {
                 const setupData = hentSetupDataFraFelter();
                 const jsonStreng = JSON.stringify(setupData, null, 2); 
@@ -794,11 +812,17 @@
                 console.log("Setup data backet op.");
             }
             
+            /**
+             * Åbner filvælger for at hente backup
+             */
             function hentSetupData() {
                 restoreFileInput.click();
                 headerMenu.classList.remove('show');
             }
             
+            /**
+             * Håndterer den valgte backup-fil
+             */
             restoreFileInput.addEventListener('change', (event) => {
                 const fil = event.target.files[0];
                 if (!fil) return;
@@ -874,16 +898,18 @@
                 ugeTitel.textContent = `Uge ${uge.ugeNummer}`;
                 ugeOversigtContainer.innerHTML = '';
 
-                uge.dage.forEach((dag, dagIndex) => {
-                    const li = document.createElement('li');
-                    li.className = 'dag-kort';
-                    li.dataset.dagIndex = dagIndex;
-                    li.innerHTML = `
-                        <h3>${dag.dag}</h3>
-                        <p>${dag.retNavn || 'Ukendt Ret'}</p> 
-                    `;
-                    ugeOversigtContainer.appendChild(li);
-                });
+                if (Array.isArray(uge.dage)) {
+                    uge.dage.forEach((dag, dagIndex) => {
+                        const li = document.createElement('li');
+                        li.className = 'dag-kort';
+                        li.dataset.dagIndex = dagIndex;
+                        li.innerHTML = `
+                            <h3>${dag.dag}</h3>
+                            <p>${dag.retNavn || 'Ukendt Ret'}</p> 
+                        `;
+                        ugeOversigtContainer.appendChild(li);
+                    });
+                }
 
                 btnForrigeUge.disabled = (ugeIndex === 0);
                 btnNæsteUge.disabled = (ugeIndex >= globalMadplanData.uger.length - 1);
@@ -1161,8 +1187,26 @@ ${målgruppePrompt}
 ${benchmarkSektionTekst} 
 
 ### Kost-Filosofi og Sundhedsprincipper (VIGTIGT!)
-(Din fulde kost-filosofi-tekst her...)
-...
+Maden skal være sund, næringsrig og primært baseret på **anti-inflammatoriske principper**. Portionerne skal være **mættende** for at dække energibehovet hos to aktive teenagere.
+
+---
+#### Videnskabelig Sammensætning & Målsætning
+Hvert aftensmåltid skal være et komplet, ernæringsmæssigt afbalanceret måltid. Fokusér på følgende sammensætning:
+* **Proteiner:** Sørg for en mættende og højkvalitets proteinkilde i HVERT måltid (bælgfrugter, linser, fisk, fjerkræ, æg) for at understøtte vækst, restitution og mæthed.
+* **Kulhydrater:** Prioritér **komplekse, langsomt optagelige kulhydrater** (f.eks. fra rodfrugter, fuldkornsris, quinoa, søde kartofler, grove grøntsager) for at sikre stabil energi. Undgå hurtige, raffinerede kulhydrater (hvid pasta, hvidt brød).
+* **Fedtstoffer:** Baser fedtindtaget på sunde, umættede kilder som **olivenolie**, **avocado**, **nødder**, **kerner** og **fed fisk**.
+
+#### Bæredygtighed & Klimahensyn
+* **Prioritér Bæredygtighed:** Planen skal afspejle en bæredygtig tilgang.
+* **Minimér Madspild:** Dette er kernen i P1-lageret. Sørg for, at opskrifter kan bruge rester fra dagen før (f.eks. kan en rest kylling bruges i en salat).
+* **Lavt Klimaaftryk:** Foretræk råvarer med lavt klimaaftryk. Dette understøttes af at prioritere grøntsager, fisk og fjerkræ over rødt kød.
+---
+
+* **Hovedfokus (Grøntsager):** Hver ret skal indeholde en betydelig mængde grøntsager (mindst 200-300g pr. person). Prioritér **danske årstidsbestemte grøntsager**.
+* **Protein-variation:** Varier proteinkilderne. Inkludér **fed fisk (f.eks. laks, makrel) mindst 1-2 gange om ugen**.
+* **Krydderier:** Vær generøs med anti-inflammatoriske krydderier som **gurkemeje**, **ingefær**, **hvidløg** og **chili**.
+* **Reducér:** Minimer brugen af stærkt forarbejdede fødevarer, tilsat sukker og raffinerede kornprodukter.
+
 ### AI'ens prioritering for planlægning (VIGTIG ORDEN!)
 1.  **Prioritet 1 (P1):** Indarbejd så mange varer som muligt fra "Prioriteret 'Stop-Madspild' Lager".
 2.  **Prioritet 2 (P2):** Byg planen op omkring "Ugens Tilbud". Brug den vedlagte benchmark-database til at vurdere tilbud.
@@ -1173,12 +1217,29 @@ ${benchmarkSektionTekst}
 [
 ${allergiTekst}
 ]
-(Resten af dine regler: Varighed, Kød, Økonomi...)
-...
+2.  **Varighed:** ${antalUger} hele uger.
+3.  **Variation:** Den samme ret må maksimalt optræde 2 gange i løbet af de ${antalUger} uger.
+4.  **Sundhed:** Følg "Kost-Filosofi" og "Videnskabelig Sammensætning" ovenfor.
+5.  **Kød (Justeret):**
+    * Maksimalt 3-4 aftensmåltider med kød (inkl. fjerkræ og fisk) om ugen.
+    * Følg de officielle kostråd: Begræns det samlede indtag af **rødt kød** (okse, svin, lam) til **maksimalt 350 gram om ugen pr. person**. AI'en skal selv beregne den samlede ugentlige mængde for husstanden baseret på "Målgruppe".
+    * Prioritér fisk og fjerkræ de dage, der er kød.
+6.  **Økonomi:** Planen skal være prisfornuftig, minimere madspild og sigte efter et ca. månedligt madbudget på 4000 DKK. 40-60% økologisk.
 
 ### Input til planen:
-(Dine P1, P2, P3 input-sektioner her...)
-...
+
+1.  **Prioriteret 'Stop-Madspild' Lager (P1):** Forsøg at bruge følgende specifikke varer fra husstandens lager:
+[
+${lagerTekst}
+]
+
+2.  **Ugens Tilbud (P2):** Byg planen op omkring disse. For varer fundet i vedhæftede aviser, tilføj butiksnavn OG "På tilbud" til "note"-feltet. Udtræk prisen til "pris"-feltet.
+${tilbudSektionTekst}
+
+3.  **Almindelige Basisvarer (P3):** Antag, at husstanden har følgende (disse skal ikke på indkøbslisten, medmindre de bruges op):
+[
+${basisTekst}
+]
 
 ### Struktur for output (JSON-format):
 Følg denne struktur nøjagtigt.
