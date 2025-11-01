@@ -604,7 +604,7 @@
         }
     </script>
 
-    <script>
+<script>
         document.addEventListener('DOMContentLoaded', () => {
 
             // --- Globale Variabler ---
@@ -614,7 +614,6 @@
             
             // --- Globale referencer til skærme og titel ---
             const skærme = document.querySelectorAll('.app-skærm');
-            // appTitel er fjernet, da vi bruger logo-headeren
             const madplanSkærm = document.getElementById('madplan');
             const opskriftSkærm = document.getElementById('opskrift');
             const setupSkærm = document.getElementById('setup');
@@ -647,7 +646,7 @@
             const inputVoksneAlder = document.getElementById('input-voksne-alder');
             const inputBoernAntal = document.getElementById('input-boern-antal');
             const inputBoernAlder = document.getElementById('input-boern-alder');
-            const inputAllergi = document.getElementById('input-allergi'); // NYT
+            const inputAllergi = document.getElementById('input-allergi');
 
             // Referencer til tjekbokse
             const checkNetto = document.getElementById('check-netto');
@@ -656,6 +655,64 @@
             const checkCoop365 = document.getElementById('check-coop365');
             const checkCoop365Ugeavis = document.getElementById('check-coop365-ugeavis');
             const checkBilka = document.getElementById('check-bilka');
+
+
+            // ===================================================
+            // NYT: SETUP DATA (LOCALSTORAGE)
+            // ===================================================
+
+            // Saml alle de felter, der skal gemmes
+            const setupInputFelter = [
+                inputVoksneAntal, inputVoksneAlder, inputBoernAntal, inputBoernAlder,
+                inputUger, inputAllergi, inputLager, inputTilbud, inputBasis
+            ];
+
+            /**
+             * Gemmer indholdet af alle setup-felter til localStorage
+             */
+            function gemSetupData() {
+                const setupData = {
+                    voksneAntal: inputVoksneAntal.value,
+                    voksneAlder: inputVoksneAlder.value,
+                    boernAntal: inputBoernAntal.value,
+                    boernAlder: inputBoernAlder.value,
+                    uger: inputUger.value,
+                    allergi: inputAllergi.value,
+                    lager: inputLager.value,
+                    tilbud: inputTilbud.value,
+                    basis: inputBasis.value
+                };
+                localStorage.setItem('minMadplanSetup', JSON.stringify(setupData));
+                console.log("Setup data gemt.");
+            }
+
+            /**
+             * Indlæser gemte setup-data og udfylder felterne
+             */
+            function indlæsSetupData() {
+                const gemtData = localStorage.getItem('minMadplanSetup');
+                if (gemtData) {
+                    const setupData = JSON.parse(gemtData);
+                    // Brug || til at sætte en default-værdi, hvis feltet er tomt
+                    inputVoksneAntal.value = setupData.voksneAntal || '2';
+                    inputVoksneAlder.value = setupData.voksneAlder || '45, 47';
+                    inputBoernAntal.value = setupData.boernAntal || '2';
+                    inputBoernAlder.value = setupData.boernAlder || '14, 17';
+                    inputUger.value = setupData.uger || '1';
+                    inputAllergi.value = setupData.allergi || '';
+                    inputLager.value = setupData.lager || '';
+                    inputTilbud.value = setupData.tilbud || '';
+                    inputBasis.value = setupData.basis || '';
+                    console.log("Setup data indlæst.");
+                }
+            }
+
+            // Tilføj event listeners til at gemme automatisk, hver gang brugeren taster
+            setupInputFelter.forEach(felt => {
+                if (felt) { // Tjek at feltet findes
+                    felt.addEventListener('input', gemSetupData);
+                }
+            });
 
 
             // ===================================================
@@ -875,7 +932,7 @@
 
 
             // ===================================================
-            // FASE 4: PROMPT-GENERERING (OPDATERET)
+            // FASE 4: PROMPT-GENERERING
             // ===================================================
 
             function formaterInputTilPrompt(rawText) {
@@ -893,7 +950,7 @@
                 const lagerTekst = formaterInputTilPrompt(inputLager.value);
                 const basisTekst = formaterInputTilPrompt(inputBasis.value);
                 const manuelleTilbudTekst = formaterInputTilPrompt(inputTilbud.value);
-                const allergiTekst = formaterInputTilPrompt(inputAllergi.value); // NYT
+                const allergiTekst = formaterInputTilPrompt(inputAllergi.value); // Læser allergi
 
                 // 2. Byg "Målgruppe"-sektionen dynamisk
                 let målgruppeTekst = [];
@@ -1144,6 +1201,9 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
             // ===================================================
             
             function startApp() {
+                // NYT: Indlæs setup-data som det første
+                indlæsSetupData();
+
                 const gemtData = localStorage.getItem('minMadplanData');
                 if (gemtData) {
                     globalMadplanData = JSON.parse(gemtData);
