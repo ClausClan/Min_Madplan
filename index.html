@@ -663,11 +663,10 @@
             let globalMadplanData = null;
             let nuværendeUgeIndex = 0;
             let nuværendeSortering = 'navn'; 
-            let globalBenchmarkData = null; // Til benchmark-data
+            let globalBenchmarkData = null; 
             
             // --- Globale referencer til skærme og titel ---
             const skærme = document.querySelectorAll('.app-skærm');
-            // appTitel er fjernet, da vi bruger logo-headeren
             const madplanSkærm = document.getElementById('madplan');
             const opskriftSkærm = document.getElementById('opskrift');
             const setupSkærm = document.getElementById('setup');
@@ -722,15 +721,11 @@
             // SETUP DATA (LOCALSTORAGE, BACKUP & RESTORE)
             // ===================================================
 
-            // Saml alle de felter, der skal gemmes
             const setupInputFelter = [
                 inputVoksneAntal, inputVoksneAlder, inputBoernAntal, inputBoernAlder,
                 inputUger, inputAllergi, inputLager, inputTilbud, inputBasis
             ];
 
-            /**
-             * Henter data fra felterne og returnerer et objekt
-             */
             function hentSetupDataFraFelter() {
                 return {
                     voksneAntal: inputVoksneAntal.value,
@@ -745,9 +740,6 @@
                 };
             }
 
-            /**
-             * Udfylder felterne baseret på et data-objekt
-             */
             function populateSetupFields(setupData) {
                 if (!setupData) return;
                 
@@ -762,18 +754,12 @@
                 inputBasis.value = setupData.basis || '';
             }
 
-            /**
-             * Gemmer indholdet af alle setup-felter til localStorage
-             */
             function gemSetupDataTilLocalStorage() {
                 const setupData = hentSetupDataFraFelter();
                 localStorage.setItem('minMadplanSetup', JSON.stringify(setupData));
                 console.log("Setup data gemt i localStorage.");
             }
 
-            /**
-             * Indlæser gemte setup-data fra localStorage og udfylder felterne
-             */
             function indlæsSetupDataFraLocalStorage() {
                 const gemtData = localStorage.getItem('minMadplanSetup');
                 if (gemtData) {
@@ -783,16 +769,12 @@
                 }
             }
 
-            // Gem automatisk, hver gang brugeren taster
             setupInputFelter.forEach(felt => {
                 if (felt) { 
                     felt.addEventListener('input', gemSetupDataTilLocalStorage);
                 }
             });
             
-            /**
-             * Starter download af backup-fil
-             */
             function backupSetupData() {
                 const setupData = hentSetupDataFraFelter();
                 const jsonStreng = JSON.stringify(setupData, null, 2); 
@@ -812,17 +794,11 @@
                 console.log("Setup data backet op.");
             }
             
-            /**
-             * Åbner filvælger for at hente backup
-             */
             function hentSetupData() {
                 restoreFileInput.click();
                 headerMenu.classList.remove('show');
             }
             
-            /**
-             * Håndterer den valgte backup-fil
-             */
             restoreFileInput.addEventListener('change', (event) => {
                 const fil = event.target.files[0];
                 if (!fil) return;
@@ -923,6 +899,9 @@
                 }
             }
 
+            /**
+             * RETTET: Denne funktion er nu "robust" og tjekker for manglende data.
+             */
             function renderOpskrift(ugeIndex, dagIndex) {
                 if (!globalMadplanData) return;
                 const dag = globalMadplanData.uger[ugeIndex].dage[dagIndex];
@@ -932,6 +911,8 @@
                 opskriftIngredienser.innerHTML = '';
                 opskriftFremgangsmåde.innerHTML = '';
 
+                // --- RETTELSE START ---
+                // Tjek om 'ingredienser' findes og er et array
                 if (Array.isArray(dag.ingredienser)) {
                     dag.ingredienser.forEach(item => {
                         const li = document.createElement('li');
@@ -939,12 +920,14 @@
                         opskriftIngredienser.appendChild(li);
                     });
                 } else {
+                    // Vis en fejlmeddelelse, hvis data mangler
                     console.warn("Ingen ingredienser fundet for:", dag.retNavn);
                     const li = document.createElement('li');
                     li.textContent = "Ingredienser mangler i data fra AI.";
                     opskriftIngredienser.appendChild(li);
                 }
 
+                // Tjek om 'fremgangsmåde' findes og er en streng
                 if (typeof dag.fremgangsmåde === 'string') {
                     const steps = dag.fremgangsmåde.split(/\d+\.\s/).filter(step => step.trim() !== '');
                     steps.forEach(step => {
@@ -953,11 +936,13 @@
                         opskriftFremgangsmåde.appendChild(li);
                     });
                 } else {
+                    // Vis en fejlmeddelelse, hvis data mangler
                     console.warn("Ingen fremgangsmåde fundet for:", dag.retNavn);
                     const li = document.createElement('li');
                     li.textContent = "Fremgangsmåde mangler i data fra AI.";
                     opskriftFremgangsmåde.appendChild(li);
                 }
+                // --- RETTELSE SLUT ---
             }
 
             function renderIndkøbsliste(ugeIndex) {
@@ -1084,7 +1069,7 @@
 
 
             // ===================================================
-            // FASE 4: PROMPT-GENERERING (OPDATERET)
+            // FASE 4: PROMPT-GENERERING
             // ===================================================
 
             function formaterInputTilPrompt(rawText) {
