@@ -900,6 +900,9 @@
                 }
             }
 
+            /**
+             * RETTET: Denne funktion er nu "robust" og tjekker for manglende data.
+             */
             function renderOpskrift(ugeIndex, dagIndex) {
                 if (!globalMadplanData) return;
                 const dag = globalMadplanData.uger[ugeIndex].dage[dagIndex];
@@ -909,6 +912,8 @@
                 opskriftIngredienser.innerHTML = '';
                 opskriftFremgangsmåde.innerHTML = '';
 
+                // --- RETTELSE START ---
+                // Tjek om 'ingredienser' findes og er et array
                 if (Array.isArray(dag.ingredienser)) {
                     dag.ingredienser.forEach(item => {
                         const li = document.createElement('li');
@@ -916,12 +921,14 @@
                         opskriftIngredienser.appendChild(li);
                     });
                 } else {
+                    // Vis en fejlmeddelelse, hvis data mangler
                     console.warn("Ingen ingredienser fundet for:", dag.retNavn);
                     const li = document.createElement('li');
                     li.textContent = "Ingredienser mangler i data fra AI.";
                     opskriftIngredienser.appendChild(li);
                 }
 
+                // Tjek om 'fremgangsmåde' findes og er en streng
                 if (typeof dag.fremgangsmåde === 'string') {
                     const steps = dag.fremgangsmåde.split(/\d+\.\s/).filter(step => step.trim() !== '');
                     steps.forEach(step => {
@@ -930,11 +937,13 @@
                         opskriftFremgangsmåde.appendChild(li);
                     });
                 } else {
+                    // Vis en fejlmeddelelse, hvis data mangler
                     console.warn("Ingen fremgangsmåde fundet for:", dag.retNavn);
                     const li = document.createElement('li');
                     li.textContent = "Fremgangsmåde mangler i data fra AI.";
                     opskriftFremgangsmåde.appendChild(li);
                 }
+                // --- RETTELSE SLUT ---
             }
 
             function renderIndkøbsliste(ugeIndex) {
@@ -1164,7 +1173,7 @@ ${målgruppePrompt}
 ${benchmarkSektionTekst} 
 
 ### Kost-Filosofi og Sundhedsprincipper (VIGTIGT!)
-Maden skal være sund, næringsrig og primært baseret på **anti-inflammatoriske principper**. Portionerne skal være **mættende** for at dække energibehovet hos to aktive teenagere.
+Maden skal være sund, næringsrig og primært baseret på **anti-inflammatoriske principper**. Portionerne skal være **mættende** for at dække energibehovet hos to aktive teenagere. Ingen færdigretter.
 
 ---
 #### Videnskabelig Sammensætning & Målsætning
@@ -1349,7 +1358,7 @@ VIGTIGT FOR DAGE: Du SKAL levere en fuld opskrift. 'ingredienser' SKAL være et 
                         
                         sorteringsKnapperContainer.querySelectorAll('button').forEach(btn => {
                             btn.classList.remove('active');
-});
+                        });
                         event.target.classList.add('active');
 
                         sorterOgVisIndkøbsliste();
