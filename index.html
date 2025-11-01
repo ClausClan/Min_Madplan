@@ -663,6 +663,7 @@
             let globalMadplanData = null;
             let nuværendeUgeIndex = 0;
             let nuværendeSortering = 'navn'; 
+            let globalBenchmarkData = null; 
             
             // --- Globale referencer til skærme og titel ---
             const skærme = document.querySelectorAll('.app-skærm');
@@ -708,7 +709,7 @@
             const checkCoop365Ugeavis = document.getElementById('check-coop365-ugeavis');
             const checkBilka = document.getElementById('check-bilka');
             
-            // NYT: Referencer til Header Menu
+            // Referencer til Header Menu
             const menuToggleBtn = document.getElementById('menu-toggle-btn');
             const headerMenu = document.getElementById('header-menu');
             const btnBackupSetup = document.getElementById('btn-backup-setup');
@@ -720,15 +721,11 @@
             // SETUP DATA (LOCALSTORAGE, BACKUP & RESTORE)
             // ===================================================
 
-            // Saml alle de felter, der skal gemmes
             const setupInputFelter = [
                 inputVoksneAntal, inputVoksneAlder, inputBoernAntal, inputBoernAlder,
                 inputUger, inputAllergi, inputLager, inputTilbud, inputBasis
             ];
 
-            /**
-             * Henter data fra felterne og returnerer et objekt
-             */
             function hentSetupDataFraFelter() {
                 return {
                     voksneAntal: inputVoksneAntal.value,
@@ -743,9 +740,6 @@
                 };
             }
 
-            /**
-             * Udfylder felterne baseret på et data-objekt
-             */
             function populateSetupFields(setupData) {
                 if (!setupData) return;
                 
@@ -760,18 +754,12 @@
                 inputBasis.value = setupData.basis || '';
             }
 
-            /**
-             * Gemmer indholdet af alle setup-felter til localStorage
-             */
             function gemSetupDataTilLocalStorage() {
                 const setupData = hentSetupDataFraFelter();
                 localStorage.setItem('minMadplanSetup', JSON.stringify(setupData));
                 console.log("Setup data gemt i localStorage.");
             }
 
-            /**
-             * Indlæser gemte setup-data fra localStorage og udfylder felterne
-             */
             function indlæsSetupDataFraLocalStorage() {
                 const gemtData = localStorage.getItem('minMadplanSetup');
                 if (gemtData) {
@@ -781,24 +769,20 @@
                 }
             }
 
-            // Gem automatisk, hver gang brugeren taster
             setupInputFelter.forEach(felt => {
                 if (felt) { 
                     felt.addEventListener('input', gemSetupDataTilLocalStorage);
                 }
             });
             
-            // --- NYT: Backup-funktion ---
             function backupSetupData() {
                 const setupData = hentSetupDataFraFelter();
-                const jsonStreng = JSON.stringify(setupData, null, 2); // 'null, 2' gør filen pæn
+                const jsonStreng = JSON.stringify(setupData, null, 2); 
                 const blob = new Blob([jsonStreng], { type: "application/json" });
                 
-                // Lav dato-streng
                 const dato = new Date().toISOString().split('T')[0];
                 const filnavn = `KøkkenKlogBackup_${dato}.json`;
 
-                // Lav et midlertidigt link og klik på det
                 const link = document.createElement('a');
                 link.href = URL.createObjectURL(blob);
                 link.download = filnavn;
@@ -810,14 +794,11 @@
                 console.log("Setup data backet op.");
             }
             
-            // --- NYT: Hent backup-funktion ---
             function hentSetupData() {
-                // Åbn filvælgeren
                 restoreFileInput.click();
                 headerMenu.classList.remove('show');
             }
             
-            // --- NYT: Håndter den valgte backup-fil ---
             restoreFileInput.addEventListener('change', (event) => {
                 const fil = event.target.files[0];
                 if (!fil) return;
@@ -827,13 +808,8 @@
                 læser.onload = (e) => {
                     try {
                         const data = JSON.parse(e.target.result);
-                        
-                        // Udfyld felterne med den indlæste data
                         populateSetupFields(data);
-                        
-                        // Gem den gendannede data til localStorage med det samme
                         gemSetupDataTilLocalStorage();
-                        
                         alert("Backup indlæst succesfuldt!");
                     } catch (error) {
                         console.error("Fejl ved indlæsning af backup:", error);
@@ -842,8 +818,6 @@
                 };
                 
                 læser.readAsText(fil);
-                
-                // Nulstil input, så man kan indlæse samme fil igen
                 event.target.value = null;
             });
 
@@ -991,6 +965,11 @@
                     if (item.pris) {
                         let prisTekst = typeof item.pris === 'number' ? item.pris.toFixed(2) : item.pris;
                         tekst += ` - ${prisTekst} kr.`;
+                        
+                        if (item.procentFraGns) {
+                            let procentTekst = item.procentFraGns > 0 ? `+${item.procentFraGns}` : item.procentFraGns;
+                            tekst += ` (${procentTekst}%)`;
+                        }
                     }
                     
                     if (item.mængde) tekst += ` (${item.mængde})`;
@@ -1065,7 +1044,7 @@
 
 
             // ===================================================
-            // FASE 4: PROMPT-GENERERING
+            // FASE 4: PROMPT-GENERERING (OPDATERET)
             // ===================================================
 
             function formaterInputTilPrompt(rawText) {
@@ -1135,6 +1114,22 @@
                 if (!tilbudSektionTekst) {
                     tilbudSektionTekst = "Der er ingen specifikke tilbud denne uge. Lav en prisfornuftig plan.";
                 }
+                
+                // OPDATERET: Indsæt benchmark-data
+                let benchmarkSektionTekst = "";
+                if (globalBenchmarkData) {
+                    benchmarkSektionTekst = `
+### Mine Pris-Benchmarks
+Her er min personlige database over gennemsnitspriser. Databasen skelner mellem 'økologisk' og 'konventionel'.
+Du SKAL bruge disse til at vurdere, om et tilbud er "godt". Når du finder en vare i tilbudsavisen (f.eks. "Økologisk Spidskål"), skal du finde den *tættest matchende* nøgle i databasen (f.eks. "Spidskål økologisk").
+\`\`\`json
+${JSON.stringify(globalBenchmarkData, null, 2)}
+\`\`\`
+`;
+                } else {
+                    benchmarkSektionTekst = "### Mine Pris-Benchmarks\nIngen benchmark-fil er indlæst. Vurdér tilbud baseret på generel viden.";
+                }
+
 
                 // Byg den nye, komplette prompt-skabelon
                 const promptSkabelon = `
@@ -1143,6 +1138,8 @@ Outputtet skal være udelukkende i JSON-format. Generer kun den rene JSON-kodebl
 
 ### Målgruppe for madplanen:
 ${målgruppePrompt}
+
+${benchmarkSektionTekst} 
 
 ### Kost-Filosofi og Sundhedsprincipper (VIGTIGT!)
 Maden skal være sund, næringsrig og primært baseret på **anti-inflammatoriske principper**. Portionerne skal være **mættende** for at dække energibehovet hos to aktive teenagere.
@@ -1167,7 +1164,7 @@ Hvert aftensmåltid skal være et komplet, ernæringsmæssigt afbalanceret målt
 
 ### AI'ens prioritering for planlægning (VIGTIG ORDEN!)
 1.  **Prioritet 1 (P1):** Indarbejd så mange varer som muligt fra "Prioriteret 'Stop-Madspild' Lager".
-2.  **Prioritet 2 (P2):** Byg planen op omkring "Ugens Tilbud" (både fra vedhæftede filer og manuel input).
+2.  **Prioritet 2 (P2):** Byg planen op omkring "Ugens Tilbud". Brug den vedlagte benchmark-database til at vurdere tilbud.
 3.  **Prioritet 3 (P3):** Brug fra "Almindelige Basisvarer" efter behov.
 
 ### Regler for madplanen:
@@ -1191,7 +1188,7 @@ ${allergiTekst}
 ${lagerTekst}
 ]
 
-2.  **Ugens Tilbud (P2):** Byg planen op omkring disse. For varer fundet i vedhæftede aviser, tilføj butiksnavn OG "På tilbud" til "note"-feltet (f.eks. "På tilbud i Netto"). Udtræk prisen til "pris"-feltet.
+2.  **Ugens Tilbud (P2):** Byg planen op omkring disse. For varer fundet i vedhæftede aviser, tilføj butiksnavn OG "På tilbud" til "note"-feltet. Udtræk prisen til "pris"-feltet.
 ${tilbudSektionTekst}
 
 3.  **Almindelige Basisvarer (P3):** Antag, at husstanden har følgende (disse skal ikke på indkøbslisten, medmindre de bruges op):
@@ -1207,6 +1204,7 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
 3.  'dag': Den FØRSTE dag varen skal bruges i ugen (f.eks. "Mandag", "Tirsdag").
 4.  'note': Butiksnavn + "På tilbud" for tilbudsvarer, ellers null.
 5.  'pris': Varens pris (som et tal, f.eks. 30.00), hvis den fremgår af tilbudsavisen. Ellers null.
+6.  'procentFraGns': (OPDATERET!) Hvis varen er på tilbud OG findes i benchmark-databasen, beregn procentforskellen fra gennemsnitsprisen (avg). Vær SIKKER på at matche 'økologisk'/'konventionel' korrekt. Ellers null.
 
 {
   "madplan": {
@@ -1216,13 +1214,14 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
         "ugeNummer": 1,
         "indkøbsliste": [
           { 
-            "navn": "Hakket Oksekød", 
+            "navn": "Hakket Oksekød Økologisk", 
             "mængde": "500g", 
             "note": "På tilbud i Netto", 
             "butik": "Netto", 
             "kategori": "Kød", 
             "dag": "Mandag",
-            "pris": 30.00
+            "pris": 35.00,
+            "procentFraGns": -15.0 
           },
           { 
             "navn": "Flåede tomater", 
@@ -1231,7 +1230,8 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
             "butik": null, 
             "kategori": "Kolonial", 
             "dag": "Mandag",
-            "pris": null
+            "pris": null,
+            "procentFraGns": null
           }
         ],
         "dage": [
@@ -1239,7 +1239,7 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
             "dag": "Mandag",
             "retNavn": "Kødsauce",
             "ingredienser": [
-              { "navn": "Hakket Oksekød", "mængde": "500g" },
+              { "navn": "Hakket Oksekød Økologisk", "mængde": "500g" },
               { "navn": "Flåede tomater", "mængde": "1 dåse" }
             ],
             "fremgangsmåde": "1. Hak løg..."
@@ -1307,12 +1307,9 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
             function sletGemtData() {
                 if (confirm("Er du sikker på, du vil slette den gemte madplan? Handlingen kan ikke fortrydes.")) {
                     localStorage.removeItem('minMadplanData');
+                    localStorage.removeItem('minMadplanSetup'); // Slet også setup
                     globalMadplanData = null;
-                    console.log("Gemt data slettet.");
-                    
-                    // Nulstil også setup-data
-                    localStorage.removeItem('minMadplanSetup');
-                    
+                    console.log("Al gemt data slettet.");
                     location.reload();
                 }
             }
@@ -1335,12 +1332,11 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
                 });
             }
 
-            // NYT: Event listeners til header-menuen
+            // Event listeners til header-menuen
             menuToggleBtn.addEventListener('click', () => {
                 headerMenu.classList.toggle('show');
             });
             
-            // Luk menuen, hvis man klikker udenfor
             window.addEventListener('click', (event) => {
                 if (!headerMenu.contains(event.target) && !menuToggleBtn.contains(event.target)) {
                     headerMenu.classList.remove('show');
@@ -1355,8 +1351,10 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
             // APP INITIALISERING (Start)
             // ===================================================
             
+            /**
+             * Starter hele appen
+             */
             function startApp() {
-                // Indlæs setup-data som det første
                 indlæsSetupDataFraLocalStorage();
 
                 const gemtData = localStorage.getItem('minMadplanData');
@@ -1376,6 +1374,29 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
                 }
             }
             
+            /**
+             * Henter benchmark-data FØRST, og starter så appen
+             */
+            function hentBenchmarkOgStartApp() {
+                fetch('./benchmark.json')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error("Benchmark.json blev ikke fundet. Fortsætter uden.");
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        globalBenchmarkData = data;
+                        console.log("Benchmark-data indlæst succesfuldt.", data);
+                    })
+                    .catch(error => {
+                        console.warn(error.message);
+                    })
+                    .finally(() => {
+                        startApp(); 
+                    });
+            }
+
             // Splash Skærm Logik
             const splashSkærm = document.getElementById('splash-screen');
             if(splashSkærm) {
@@ -1385,10 +1406,10 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
                         splashSkærm.style.display = 'none';
                     }, 500); 
 
-                    startApp(); // Kør appen!
+                    hentBenchmarkOgStartApp(); // Kør appen EFTER splash
                 }, 2000); 
             } else {
-                startApp(); // Kør appen med det samme hvis splash ikke findes
+                hentBenchmarkOgStartApp(); // Kør appen med det samme
             }
 
         });

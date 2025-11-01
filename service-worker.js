@@ -1,20 +1,21 @@
 // Definer et unikt navn og version til din cache
-const CACHE_NAME = 'min-madplan-cache-v2'; // Opdateret version!
+const CACHE_NAME = 'min-madplan-cache-v3'; // VIGTIGT: Opdateret version
 
-// RETTET: Alle stier skal være relative (./) og inkludere ALLE app-filer
+// Definer de filer, der skal caches. 
 const URLS_TO_CACHE = [
     './',
     './index.html',
-    './manifest.json',
+    './manifest.json', // Antager at du har lavet denne fra sidst
     './Logo.png',
     './Logo1.png',
     './Logo2.png',
-    './Flavicon.ico'
+    './Flavicon.ico',
+    './benchmark.json' // NYT: Tilføjet benchmark-fil
 ];
 
 // --- 1. INSTALL Event: Henter og gemmer filerne i cachen ---
 self.addEventListener('install', (event) => {
-    console.log('Service Worker: Installerer v2...');
+    console.log('Service Worker: Installerer v3...');
     
     event.waitUntil(
         caches.open(CACHE_NAME)
@@ -31,7 +32,7 @@ self.addEventListener('install', (event) => {
 
 // --- 2. ACTIVATE Event: Rydder op i gamle caches ---
 self.addEventListener('activate', (event) => {
-    console.log('Service Worker: Aktiverer v2...');
+    console.log('Service Worker: Aktiverer v3...');
     
     event.waitUntil(
         caches.keys().then((cacheNames) => {
