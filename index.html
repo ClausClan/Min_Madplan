@@ -1154,7 +1154,6 @@ ${JSON.stringify(globalBenchmarkData, null, 2)}
 
 
                 // Byg den nye, komplette prompt-skabelon
-                // KODEN ER NU KOMPLET OG INDSÆTTER DE RIGTIGE VARIABLER
                 const promptSkabelon = `
 Generer en komplet madplan for ${antalUger} uger til aftensmad.
 Outputtet skal være udelukkende i JSON-format. Generer kun den rene JSON-kodeblok, uden indledende eller afsluttende tekst.
@@ -1229,7 +1228,7 @@ VIGTIGT FOR INDKØBSLISTE: For HVER vare på indkøbslisten SKAL du tilføje:
 5.  'pris': Varens pris (som et tal, f.eks. 30.00), hvis den fremgår af tilbudsavisen. Ellers null.
 6.  'procentFraGns': (OPDATERET!) Hvis varen er på tilbud OG findes i benchmark-databasen, beregn procentforskellen fra gennemsnitsprisen (avg). Vær SIKKER på at matche 'økologisk'/'konventionel' og 'enhed' (kg/stk) korrekt. Ellers null.
 
-VIGTIGT FOR DAGE: Du SKAL levere en fuld opskrift. 'ingredienser' SKAL være et array af objekter, og 'fremgangsmåde' SKAL være en nummereret streng. BRUG IKKE 'ret' eller 'beskrivelse'. BRUG KUN 'retNavn', 'ingredienser', og 'fremgangsmåde' som vist i eksemplet.
+VIGTIGT FOR DAGE: Du SKAL levere en fuld opskrift. 'ingredienser' SKAL være et array af objekter, og 'fremgangsmåde' SKAL være en nummereret streng. BRUG IKKE 'ret', 'beskrivelse', 'primæreTilbudsvarer', eller 'kilder'. BRUG KUN 'retNavn', 'ingredienser', og 'fremgangsmåde' som vist i eksemplet.
 
 {
   "madplan": {
@@ -1350,7 +1349,7 @@ VIGTIGT FOR DAGE: Du SKAL levere en fuld opskrift. 'ingredienser' SKAL være et 
                         
                         sorteringsKnapperContainer.querySelectorAll('button').forEach(btn => {
                             btn.classList.remove('active');
-                        });
+});
                         event.target.classList.add('active');
 
                         sorterOgVisIndkøbsliste();
